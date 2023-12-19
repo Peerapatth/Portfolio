@@ -1,47 +1,47 @@
 import Peerapat from "../assets/Peerapat.svg";
-import "./Home/homepage.css";
-import {Link} from "react-router-dom"
-
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 interface NavProps {
-  activeButton: string;
   handleButtonClick: (button: string) => void;
 }
 
-const Nav: React.FC<NavProps> = ({ activeButton, handleButtonClick }) => {
+const Nav: React.FC<NavProps> = ({ handleButtonClick }) => {
   return (
     <div className="Card__nav">
       <div className="Card__nav__left">
         <div className="Card__nav__icon">
-          <img src={Peerapat} alt="Logo" style={{ width: "120%" }} />
+          <NavLink
+            to="/"
+            className="Card__nav__icon"
+            onClick={() => handleButtonClick("Home")}
+          >
+            <img src={Peerapat} alt="Logo" style={{ width: "125%" }} />
+          </NavLink>
         </div>
       </div>
       <div className="Card__nav__right">
-        <button
-          className={`Card__nav__item ${
-            activeButton === "Home" ? "active" : ""
-          }`}
+        <NavLink
+          to="/"
+          className="Card__nav__item"
           onClick={() => handleButtonClick("Home")}
         >
           Home
-        </button>
-        <button
-          className={`Card__nav__item ${
-            activeButton === "About" ? "active" : ""
-          }`}
+        </NavLink>
+        <NavLink
+          to="/about"
+          className="Card__nav__item"
           onClick={() => handleButtonClick("About")}
         >
           About
-        </button>
-        <button
-          className={`Card__nav__item ${
-            activeButton === "Work" ? "active" : ""
-          }`}
+        </NavLink>
+        <NavLink
+          to="/work"
+          className="Card__nav__item"
           onClick={() => handleButtonClick("Work")}
         >
           Work & Project
-        </button>
+        </NavLink>
       </div>
     </div>
   );

@@ -1,20 +1,19 @@
 import Nav from "../Nav";
-import { useState } from "react";
-import './Portfolio.css'
+import "./Portfolio.css";
+import {About, Project} from '../index'
 
 export const Portfolio = () => {
-  const [activeButton, setActiveButton] = useState("");
-
   const handleButtonClick = (button: string) => {
-    setActiveButton(button);
+    button;
   };
 
   return (
     <div className="Portfolio">
-      <Nav
-          activeButton={activeButton}
-          handleButtonClick={handleButtonClick}
-        />
+      <div className="Container">
+        <Nav handleButtonClick={handleButtonClick} />
+        </div>
+        <About/>
+        <Project/>
     </div>
   );
 };

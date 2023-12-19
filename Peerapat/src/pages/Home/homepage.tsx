@@ -1,22 +1,16 @@
 import "./homepage.css";
-import { useState } from "react";
 import Me from "../../assets/me.jpg";
 import Nav from "../Nav";
 
 export const Homepage = () => {
-  const [activeButton, setActiveButton] = useState("Home");
-
   const handleButtonClick = (button: string) => {
-    setActiveButton(button);
+    button;
   };
 
   return (
     <div className="homepage">
       <div className="Card">
-        <Nav
-          activeButton={activeButton}
-          handleButtonClick={handleButtonClick}
-        />
+        <Nav handleButtonClick={handleButtonClick} />
         <div className="Card__body">
           <div className="Card__body__left">
             <div className="Card__body__title">Hello, I am</div>

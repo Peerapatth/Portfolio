@@ -1,12 +1,12 @@
-import { Homepage, Portfolio } from './pages';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './Routes';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <Portfolio/>
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
-}
+};
 
 export default App;
