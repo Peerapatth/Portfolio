@@ -12,7 +12,7 @@ import CSS from "../../assets/Skills/Programming/CSS.svg";
 import Go from "../../assets/Skills/Programming/Go.svg";
 import C from "../../assets/Skills/Programming/C.svg";
 import Python from "../../assets/Skills/Programming/Python.svg";
-import tailwind from "../../assets/Skills/Programming/tailwind.svg";
+import tailwind from "../../assets/Skills/Programming/Tailwind.svg";
 
 import Figma from "../../assets/Skills/Tools/Figma.svg";
 import AdobeXD from "../../assets/Skills/Tools/XD.svg";
