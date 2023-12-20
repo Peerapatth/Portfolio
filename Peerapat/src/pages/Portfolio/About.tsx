@@ -1,4 +1,4 @@
-import KMUTT from "../../assets/kmutt.png";
+import KMUTT from "../../assets/KMUTT.png";
 import Address from "../../assets/Address.png";
 import Email from "../../assets/Email.png";
 import Phone from "../../assets/Call.png";
