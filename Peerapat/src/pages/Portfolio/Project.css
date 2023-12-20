@@ -303,6 +303,23 @@
     height: 65px;
     margin-bottom: 16px;
   }
+
+  .Work__Title__Container {
+    margin-top: 16px;
+  }
+
+  .Banner__Mid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Project__Pesona {
+    margin-bottom: 30px;
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -347,5 +364,9 @@
 
   .Project {
     padding: 0px 0px 50px 0px;
+  }
+
+  .Project__Pesona {
+    margin-bottom: 16px;
   }
 }
