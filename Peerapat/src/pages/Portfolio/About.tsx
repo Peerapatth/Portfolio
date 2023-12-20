@@ -4,25 +4,25 @@ import Email from "../../assets/Email.png";
 import Phone from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
 
-import React from "../../assets/Skills/Programming/React.svg";
-import JS from "../../assets/Skills/Programming/JS.svg";
-import TS from "../../assets/Skills/Programming/TS.svg";
-import HTML from "../../assets/Skills/Programming/HTML.svg";
-import CSS from "../../assets/Skills/Programming/CSS.svg";
-import Go from "../../assets/Skills/Programming/Go.svg";
-import C from "../../assets/Skills/Programming/C.svg";
-import Python from "../../assets/Skills/Programming/Python.svg";
-import tailwind from "../../assets/Skills/Programming/Tailwind.svg";
+import React from "../../assets/Skills/Programming/React.png";
+import JS from "../../assets/Skills/Programming/JS.png";
+import TS from "../../assets/Skills/Programming/TS.png";
+import HTML from "../../assets/Skills/Programming/HTML.png";
+import CSS from "../../assets/Skills/Programming/CSS.png";
+import Go from "../../assets/Skills/Programming/Go.png";
+import C from "../../assets/Skills/Programming/C.png";
+import Python from "../../assets/Skills/Programming/Python.png";
+import tailwind from "../../assets/Skills/Programming/Tailwind.png";
 
-import Figma from "../../assets/Skills/Tools/Figma.svg";
-import AdobeXD from "../../assets/Skills/Tools/XD.svg";
-import Photoshop from "../../assets/Skills/Tools/PS.svg";
-import VSCode from "../../assets/Skills/Tools/VS.svg";
-import Git from "../../assets/Skills/Tools/Git.svg";
+import Figma from "../../assets/Skills/Tools/Figma.png";
+import AdobeXD from "../../assets/Skills/Tools/XD.png";
+import Photoshop from "../../assets/Skills/Tools/PS.png";
+import VSCode from "../../assets/Skills/Tools/VS.png";
+import Git from "../../assets/Skills/Tools/Git.png";
 
-import Mongo from "../../assets/Skills/Database/Mongo.svg";
-import Prograse from "../../assets/Skills/Database/Prograse.svg";
-import Oracle from "../../assets/Skills/Database/Oracle.svg";
+import Mongo from "../../assets/Skills/Database/Mongo.png";
+import Prograse from "../../assets/Skills/Database/Prograse.png";
+import Oracle from "../../assets/Skills/Database/Oracle.png";
 
 import "./About.css";
 
