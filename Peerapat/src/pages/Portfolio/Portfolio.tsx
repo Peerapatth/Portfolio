@@ -1,6 +1,6 @@
 import Nav from "../Nav";
 import "./Portfolio.css";
-import {About, Project} from '../index'
+import { About, Project } from "../index";
 
 export const Portfolio = () => {
   const handleButtonClick = (button: string) => {
@@ -10,10 +10,12 @@ export const Portfolio = () => {
   return (
     <div className="Portfolio">
       <div className="Container">
-        <Nav handleButtonClick={handleButtonClick} />
+        <div className="Nav">
+          <Nav handleButtonClick={handleButtonClick} />
         </div>
-        <About/>
-        <Project/>
+      </div>
+      <About />
+      <Project />
     </div>
   );
 };

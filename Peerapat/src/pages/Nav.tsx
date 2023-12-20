@@ -16,7 +16,7 @@ const Nav: React.FC<NavProps> = ({ handleButtonClick }) => {
             className="Card__nav__icon"
             onClick={() => handleButtonClick("Home")}
           >
-            <img src={Peerapat} alt="Logo" style={{ width: "125%" }} />
+            <img src={Peerapat} alt="Logo" style={{ width: "120%" }} />
           </NavLink>
         </div>
       </div>
