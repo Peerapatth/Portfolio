@@ -7,7 +7,7 @@ import Pres from "../../assets/Project/Pres.png";
 import Hack from "../../assets/Project/Hack.png";
 
 import ProjectTradekub from "../../assets/TradeKub/ProjectTradekub.png";
-import banner from "../../assets/TradeKub/banner.png";
+import banner from "../../assets/TradeKub/Banner.png";
 import ProjectMODX from "../../assets/MODX/Logo.png";
 import MODXBanner from "../../assets/MODX/MODX_Banner.png";
 import Mock from "../../assets/MODX/Mock.png";
