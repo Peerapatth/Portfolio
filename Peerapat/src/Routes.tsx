@@ -1,5 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
-import { Homepage, Portfolio } from './pages';
+import { Route, Routes } from "react-router-dom";
+import { Homepage, Portfolio } from "./pages";
 
 const AppRoutes = () => {
   return (
