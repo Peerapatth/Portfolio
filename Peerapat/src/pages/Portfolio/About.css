@@ -1,37 +1,19 @@
-body {
-  overflow-x: hidden;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  body {
-    scrollbar-width: thin; 
-    scrollbar-color: transparent transparent;
-    overflow: auto; 
-  }
-
-  body::-webkit-scrollbar {
-    width: 0; 
-  }
-}
-
-
 .About{
-  margin-top: 200px;
   padding: 0px 15% 0px 15%;
   color: var(--clr6);
 }
 
 .About__Me{
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 25px;
-  padding: 50px 15% 50px 15%;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  padding: 50px 15% 50px 0%;
 }
 
 .About__Left{
   display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  justify-content: end;
+  margin-top: 14px;
 }
 
 .About__Me__Image{
@@ -83,6 +65,7 @@ body {
 .About__Profile{
   margin-top: 50px;
 }
+
 .About__Profile h1{
   font-size: var(--L);
   letter-spacing: 1.4px;
@@ -102,6 +85,12 @@ body {
 }
 
 .About__Profile__Link__detail{
+  color: var(--clr6);
+  font-size: var(--S);
+}
+
+.About__Profile__Link__detail a {
+  text-decoration: none;
   color: var(--clr6);
   font-size: var(--S);
 }
@@ -170,8 +159,11 @@ body {
   margin-bottom: 36px;
 }
 
-.About__Skill{
-  padding: 0px 20% 0px 20%;
+
+.About__Grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: -50px;
 }
 
 .About__Skill h1{
@@ -201,10 +193,20 @@ body {
   margin-right: 6px;
 }
 
-@media screen and (max-width: 1000px) {
+.About__Profile__Link__detail a:hover{
+  color: var(--clr5);
+  cursor: pointer;
+}
 
+@media screen and (max-width: 1000px) {
+  .About__Me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    padding: 50px 15% 50px 0%;
+  }
   .About{
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
   .About__Left{
@@ -245,6 +247,8 @@ body {
     font-size: var(--M);
   }
 
+
+  .About__Profile__Link__detail a,
   .About__Profile__Link__detail{
     font-size: var(--XS);
   }
@@ -296,10 +300,29 @@ body {
     margin-bottom: 36px;
   }
 
+  .About__Contact{
+    margin-top: 16px;
+  }
+
+  .About__Profile{
+    margin-top: 30px;
+  }
+
+  .About__Education{
+    margin-top: 30px;
+  }
+
+  .About__Grid{
+    margin-top: -20px;
+  }
+
 }
 @media screen and (max-width: 600px) {
   .About__Me{
-    grid-template-columns: 80px 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    padding: 50px 15% 50px 0%;
   }
 
   .About__Left{
@@ -311,7 +334,7 @@ body {
   }
 
   .About{
-    margin-top: 80px;
+    margin-top: -20px;
     padding: 0px;
   }
 
@@ -353,6 +376,7 @@ body {
     font-size: var(--XXS);
   }
 
+  .About__Profile__Link__detail a,
   .About h2{
     font-size: var(--XXS);
   }
@@ -398,5 +422,18 @@ body {
     border-radius: 50%;
     background-color: var(--clr6);
     margin-bottom: 36px;
+  }
+
+  .About__Profile{
+    margin-top: 16px;
+  }
+
+  .About__Education{
+    margin-top: 16px;
+  }
+
+  .About__Grid{
+    margin-top: -50px;
+    margin-bottom: -60px;
   }
 }

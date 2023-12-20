@@ -22,7 +22,7 @@ const Nav: React.FC<NavProps> = ({ handleButtonClick }) => {
       </div>
       <div className="Card__nav__right">
         <NavLink
-          to="/"
+          to="/#home"
           className="Card__nav__item"
           onClick={() => handleButtonClick("Home")}
         >

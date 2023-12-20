@@ -111,10 +111,42 @@ export const About = () => {
                 <div className="bx bxl-github"></div>
               </div>
               <div>
-                <div className="About__Profile__Link__detail">Resume</div>
-                <div className="About__Profile__Link__detail">LinkedIn</div>
-                <div className="About__Profile__Link__detail">Behance</div>
-                <div className="About__Profile__Link__detail">GitHub</div>
+                <div className="About__Profile__Link__detail">
+                  <a
+                    href="https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Peerapat?page-id=323%3A20&type=design&node-id=490-2&viewport=528%2C490%2C0.68&t=z73s5ZlHRswFhRmq-1&scaling=contain&mode=design"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </div>
+                <div className="About__Profile__Link__detail">
+                  <a
+                    href="https://www.linkedin.com/in/peerapatpadt/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+                <div className="About__Profile__Link__detail">
+                  <a
+                    href="https://www.behance.net/peerapatpadtawaro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Behance
+                  </a>
+                </div>
+                <div className="About__Profile__Link__detail">
+                  <a
+                    href="https://github.com/Peerapatth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </div>
             </div>
             <div className="About__Education">
@@ -147,87 +179,90 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div className="About__Skill">
-        <h1>SKILLS</h1>
-        <h2>Programming Languages</h2>
-        <div className="About__Skill__Container">
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${React})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${JS})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${TS})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${HTML})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${CSS})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Go})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${C})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Python})` }}
-          ></div>
+      <div className="About__Grid">
+        <div></div>
+        <div className="About__Skill">
+          <h1>SKILLS</h1>
+          <h2>Programming Languages</h2>
+          <div className="About__Skill__Container">
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${React})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${JS})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${TS})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${HTML})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${CSS})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Go})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${C})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Python})` }}
+            ></div>
 
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${tailwind})` }}
-          ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${tailwind})` }}
+            ></div>
+          </div>
+          <h2>Software & Tools</h2>
+          <div className="About__Skill__Container">
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Figma})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${AdobeXD})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Photoshop})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${VSCode})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Git})` }}
+            ></div>
+          </div>
+          <h2>Database</h2>
+          <div className="About__Skill__Container">
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Mongo})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Prograse})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Oracle})` }}
+            ></div>
+          </div>
         </div>
-        <h2>Software & Tools</h2>
-        <div className="About__Skill__Container">
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Figma})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${AdobeXD})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Photoshop})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${VSCode})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Git})` }}
-          ></div>
-
-        </div>
-        <h2>Database</h2>
-        <div className="About__Skill__Container">
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Mongo})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Prograse})` }}
-          ></div>
-          <div
-            className="Skill__Icon"
-            style={{ backgroundImage: `url(${Oracle})` }}
-          ></div>
-        </div>
+        <div></div>
       </div>
     </div>
   );
