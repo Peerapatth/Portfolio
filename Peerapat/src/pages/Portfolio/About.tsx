@@ -95,7 +95,8 @@ export const About = () => {
               {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}
-              {"\u00A0"}
+              {"\u00A0"} 
+              
               I'm a Computer Engineering student at KMUTT with a strong interest
               in Frontend Development and UX/UI Design. passion lies in creating
               seamless user experiences through clean and interactive
