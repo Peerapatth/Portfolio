@@ -38,6 +38,10 @@
   margin-bottom: 30px;
 }
 
+.Work__Text__Title a{
+  color: var(--clr6);
+}
+
 .Work__Icon {
   width: 100%;
   display: flex;
@@ -254,13 +258,19 @@
   padding: 0px 15% 0px 15%;
 }
 
-.Cer__Container__Text a {
+.Cer__Container__Text a,
+.Work__Text__Title a {
   text-decoration: none;
 }
 
 .Project__Link a:hover {
   cursor: pointer;
   transform: translateY(-1px);
+}
+
+.Work__Text__Title a:hover {
+  cursor: pointer;
+  color: var(--clr5);
 }
 
 @media screen and (max-width: 1000px) {

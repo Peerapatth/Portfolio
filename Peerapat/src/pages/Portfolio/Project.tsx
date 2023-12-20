@@ -72,7 +72,11 @@ export const Project = () => {
             </div>
             <div>
               <div className="Work__Text__Title">
-                <h2>Staff At BangMod hackathon 2023</h2>
+                <h2><a
+                href="https://www.figma.com/file/peGwOZHzRK1B6d0UoqvFuA/WEBHACKATHON23?type=design&node-id=0%3A1&mode=design&t=vH5Hhu9FTnLELoX4-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Staff At BangMod hackathon 2023</a></h2>
                 <p>
                   KMUTT <br />
                   Oct 2022 - Nov 2022 · 2 mounts
@@ -81,7 +85,11 @@ export const Project = () => {
                 </p>
               </div>
               <div className="Work__Text__Title">
-                <h2>Staff At Pre Freshy CPE2022</h2>
+                <h2><a
+                href="https://www.behance.net/gallery/171777891/Tradekub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Staff At Pre Freshy CPE2022</a></h2>
                 <p>
                   KMUTT <br />
                   Jun 2022 - Jul 2022 · 2 mounts
@@ -90,7 +98,11 @@ export const Project = () => {
                 </p>
               </div>
               <div className="Work__Text__Title">
-                <h2>Staff At Comcamp 33</h2>
+                <h2><a
+                href="https://www.behance.net/gallery/146855757/Comcamp-33"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Staff At Comcamp 33</a></h2>
                 <p>
                   KMUTT <br />
                   Mar 2022 - Mar 2022 · 2 mounts <br />
