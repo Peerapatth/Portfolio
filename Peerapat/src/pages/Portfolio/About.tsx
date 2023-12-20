@@ -2,7 +2,7 @@ import KMUTT from "../../assets/kmutt.png";
 import Address from "../../assets/Address.png";
 import Email from "../../assets/Email.png";
 import Phone from "../../assets/Call.png";
-import Me from "../../assets/Me.jpg";
+import Me from "../../assets/Me.png";
 
 import React from "../../assets/Skills/Programming/React.svg";
 import JS from "../../assets/Skills/Programming/JS.svg";

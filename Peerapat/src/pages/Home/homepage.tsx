@@ -1,5 +1,5 @@
 import "./homepage.css";
-import Me from "../../assets/me.jpg";
+import Me from "../../assets/Me.png";
 import Nav from "../Nav";
 
 export const Homepage = () => {
