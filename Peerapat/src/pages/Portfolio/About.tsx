@@ -5,7 +5,7 @@ import Phone from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
 
 import React from "../../assets/Skills/Programming/React.svg";
-import JS from "../../assets/Skills/Programming/JS.svg";
+import JS from "../../assets/Skills/Programming/React.svg";
 import TS from "../../assets/Skills/Programming/TS.svg";
 import HTML from "../../assets/Skills/Programming/HTML.svg";
 import CSS from "../../assets/Skills/Programming/CSS.svg";
@@ -96,7 +96,7 @@ export const About = () => {
               {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"} 
-              
+
               I'm a Computer Engineering student at KMUTT with a strong interest
               in Frontend Development and UX/UI Design. passion lies in creating
               seamless user experiences through clean and interactive
