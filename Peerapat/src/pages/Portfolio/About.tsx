@@ -114,7 +114,7 @@ export const About = () => {
               <div>
                 <div className="About__Profile__Link__detail">
                   <a
-                    href="https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Peerapat?page-id=323%3A20&type=design&node-id=490-2&viewport=528%2C490%2C0.68&t=z73s5ZlHRswFhRmq-1&scaling=contain&mode=design"
+                    href="https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Peerapat?page-id=560%3A2&type=design&node-id=560-3&viewport=717%2C473%2C1.03&t=GNhddDAZyg5N1KmS-1&scaling=min-zoom&mode=design"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

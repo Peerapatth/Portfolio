@@ -86,7 +86,7 @@ export const Project = () => {
               </div>
               <div className="Work__Text__Title">
                 <h2><a
-                href="https://www.behance.net/gallery/171777891/Tradekub"
+                href="https://www.behance.net/gallery/146855429/Pre-Freshy-CPE-2022"
                 target="_blank"
                 rel="noopener noreferrer"
               >Staff At Pre Freshy CPE2022</a></h2>
@@ -462,11 +462,10 @@ export const Project = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>React Basics</h2>
+            <h2>Advanced React</h2>
           </a>
           <p>
-            5/9 Completed - Meta Front-End Developer Professional Certificate
-            and continuous learning.
+            6/9 Completed - Meta FrontEnd Developer Professional Certificate
           </p>
         </div>
       </div>
