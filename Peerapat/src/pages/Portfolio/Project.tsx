@@ -432,7 +432,7 @@ export const Project = () => {
             <h2>Style Guide</h2>
           </div>
           <div
-            className="Project__Banner__Savoly"
+            className="Project__Banner__Style"
             style={{ backgroundImage: `url(${Style})` }}
           ></div>
         </div>
