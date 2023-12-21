@@ -1,15 +1,8 @@
-import  { useEffect, useState } from 'react';
 import Nav from "../Nav";
 import "./Portfolio.css";
 import { About, Project } from "../index";
 
 export const Portfolio = () => {
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    setFadeIn(true);
-  }, []);
-
   const handleButtonClick = (button: string) => {
     const element = document.getElementById(button.toLowerCase());
     if (element) {
@@ -18,16 +11,18 @@ export const Portfolio = () => {
   };
 
   return (
-    <div className={`Portfolio ${fadeIn ? 'fade-in' : ''}`}>
+    <div className="Portfolio">
       <div id="home"></div>
-      <div id="about" className="Container">
+      <div id="about" style={{ paddingTop: "50px" }}>
         <About />
       </div>
-      <div id="work" className="Container">
+      <div id="work" style={{ paddingTop: "50px" }}>
         <Project />
       </div>
-      <div className={`Container Nav ${fadeIn ? 'fade-in' : ''}`}>
-        <Nav handleButtonClick={handleButtonClick} />
+      <div className="Container">
+        <div className="Nav">
+          <Nav handleButtonClick={handleButtonClick} />
+        </div>
       </div>
     </div>
   );
