@@ -458,7 +458,7 @@ export const Project = () => {
         <div className="Cer__Container__Text">
           <p>Sep 2022 - Present</p>
           <a
-            href="https://www.coursera.org/account/accomplishments/verify/BVC3DFWVX2F9"
+            href="https://www.coursera.org/account/accomplishments/verify/23N62QT9AYRP"
             target="_blank"
             rel="noopener noreferrer"
           >
