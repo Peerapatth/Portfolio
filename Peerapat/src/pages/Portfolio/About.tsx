@@ -131,7 +131,7 @@ export const About = () => {
                   </a>
                 </div>
                 <div className="About__Profile__Link__detail">
-                  <a
+                  <a 
                     href="https://www.behance.net/peerapatpadtawaro"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -167,7 +167,7 @@ export const About = () => {
                     <p>Computer Engineering</p>
                     <p>Bachelor of Engineering - BE</p>
                     <p>2021 - Present</p>
-                  </div>
+                  </div> 
                   <div className="About__Education__KMUTT">
                     <h2>Sriboonruang Wittayakarn School</h2>
                     <p>Science Math Technology and Environment (SMTE)</p>
