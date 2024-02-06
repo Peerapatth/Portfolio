@@ -7,6 +7,10 @@ body {
 
     animation: fadeInHome 1s ease;
   }
+
+::-webkit-scrollbar{
+  display: none;
+}
   
   @keyframes fadeInHome {
     from {
