@@ -13,6 +13,7 @@ import Go from "../../assets/Skills/Programming/Go.png";
 import C from "../../assets/Skills/Programming/C.png";
 import Python from "../../assets/Skills/Programming/Python.png";
 import tailwind from "../../assets/Skills/Programming/Tailwind.png";
+import Vue from "../../assets/Skills/Programming/Vue.png";
 
 import Figma from "../../assets/Skills/Tools/Figma.png";
 import AdobeXD from "../../assets/Skills/Tools/XD.png";
@@ -218,10 +219,13 @@ export const About = () => {
               className="Skill__Icon"
               style={{ backgroundImage: `url(${Python})` }}
             ></div>
-
             <div
               className="Skill__Icon"
               style={{ backgroundImage: `url(${tailwind})` }}
+            ></div>
+            <div
+              className="Skill__Icon"
+              style={{ backgroundImage: `url(${Vue})` }}
             ></div>
           </div>
           <h2>Software & Tools</h2>

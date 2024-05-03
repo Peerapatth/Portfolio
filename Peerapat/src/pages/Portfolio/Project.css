@@ -287,6 +287,16 @@
   color: var(--clr5);
 }
 
+.Project__Banner:hover,
+.Project__Banner__MODX:hover,
+.Project__Banner__Savoly:hover,
+.Project__MODX__MOCKUP:hover,
+.Project__Banner__Style:hover,
+.Project__Pesona:hover,
+.Project__CER:hover {
+  scale: 1.02;
+}
+
 @media screen and (max-width: 1000px) {
   .Project h1 {
     font-size: var(--M);
