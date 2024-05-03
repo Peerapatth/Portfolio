@@ -14,7 +14,7 @@ export const Homepage = () => {
         <div className="Card__body">
           <div className="Card__body__left">
             <div className="Card__body__title">Hello, I am</div>
-            <div className="Card__body__name">Peerapat Padtawaro</div>
+            <div className="Card__body__name">Peerapat Padtawaro |</div>
             <div className="Card__body__subtitle">
               <span
                 className="Card__body__subtitle__text"

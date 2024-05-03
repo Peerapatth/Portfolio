@@ -119,9 +119,28 @@ body {
 }
 
 .Card__body__name {
+  width: 100%;
   font-size: var(--XL);
   font-weight: var(--bold);
   color: var(--clr6);
+  animation:
+    typing 3s steps(21) infinite, 
+    bblink 0.5s step-end infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .Card__body__right {
