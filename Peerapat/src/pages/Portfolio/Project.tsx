@@ -319,10 +319,12 @@ export const Project = () => {
               this platform.
             </p>
           </div>
-          <div
-            className="Project__MODX__MOCKUP"
-            style={{ backgroundImage: `url(${Mock})` }}
-          ></div>
+          <div data-aos="fade-up">
+            <div
+              className="Project__MODX__MOCKUP"
+              style={{ backgroundImage: `url(${Mock})` }}
+            ></div>
+          </div>
         </div>
       </div>
       <div data-aos="fade-up">
@@ -502,42 +504,41 @@ export const Project = () => {
           </div>
         </div>
       </div>
-        <div className="Contact">
-          <div className="Contact__title">Contact me</div>
-          <div className="Contact__body">
-            <a href="https://www.linkedin.com/in/peerapatpadt/" target="_blank">
-              <i
-                className="bx bxl-linkedin"
-                style={{
-                  color: "#FFFFFF",
-                  fontSize: "1.5rem",
-                  margin: "0.25rem",
-                }}
-              ></i>
-            </a>
-            <a href="https://github.com/Peerapatth" target="_blank">
-              <i
-                className="bx bxl-github"
-                style={{
-                  color: "#FFFFFF",
-                  fontSize: "1.5rem",
-                  margin: "0.25rem",
-                }}
-              ></i>
-            </a>
-            <a href="https://www.behance.net/peerapatpadtawaro" target="_blank">
-              <i
-                className="bx bxl-behance"
-                style={{
-                  color: "#FFFFFF",
-                  fontSize: "1.5rem",
-                  margin: "0.25rem",
-                }}
-              ></i>
-            </a>
-          </div>
+      <div className="Contact">
+        <div className="Contact__title">Contact me</div>
+        <div className="Contact__body">
+          <a href="https://www.linkedin.com/in/peerapatpadt/" target="_blank">
+            <i
+              className="bx bxl-linkedin"
+              style={{
+                color: "#FFFFFF",
+                fontSize: "1.5rem",
+                margin: "0.25rem",
+              }}
+            ></i>
+          </a>
+          <a href="https://github.com/Peerapatth" target="_blank">
+            <i
+              className="bx bxl-github"
+              style={{
+                color: "#FFFFFF",
+                fontSize: "1.5rem",
+                margin: "0.25rem",
+              }}
+            ></i>
+          </a>
+          <a href="https://www.behance.net/peerapatpadtawaro" target="_blank">
+            <i
+              className="bx bxl-behance"
+              style={{
+                color: "#FFFFFF",
+                fontSize: "1.5rem",
+                margin: "0.25rem",
+              }}
+            ></i>
+          </a>
         </div>
-     
+      </div>
     </div>
   );
 };
