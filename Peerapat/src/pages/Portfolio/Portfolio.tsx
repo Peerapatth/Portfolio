@@ -2,7 +2,15 @@ import Nav from "../Nav";
 import "./Portfolio.css";
 import { About, Project } from "../index";
 
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const Portfolio = () => {
+  useEffect(() => {
+    AOS.init();
+  }), [];
   const handleButtonClick = (button: string) => {
     const element = document.getElementById(button.toLowerCase());
     if (element) {

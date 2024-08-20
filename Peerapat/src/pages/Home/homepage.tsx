@@ -1,7 +1,31 @@
 import "./homepage.css";
-import Me from "../../assets/Me.png";
+import Me from "../../assets/Me.jpg";
 import Nav from "../Nav";
 
+
+import { useState, useEffect } from "react";
+const TypingName = () => {
+  const fullName = "Peerapat Padtawaro";
+  const [displayedName, setDisplayedName] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setDisplayedName(fullName.slice(0, index + 1));
+      index++;
+      if (index > fullName.length) {
+        index = 0; 
+        setDisplayedName(""); 
+      }
+    }, 200); 
+
+    return () => clearInterval(interval); 
+  }, [fullName]);
+
+  return (
+    <div className="Card__body__name">{displayedName}</div>
+  );
+};
 export const Homepage = () => {
   const handleButtonClick = (button: string) => {
     button;
@@ -14,7 +38,7 @@ export const Homepage = () => {
         <div className="Card__body">
           <div className="Card__body__left">
             <div className="Card__body__title">Hello, I am</div>
-            <div className="Card__body__name">Peerapat Padtawaro |</div>
+            <TypingName />
             <div className="Card__body__subtitle">
               <span
                 className="Card__body__subtitle__text"
