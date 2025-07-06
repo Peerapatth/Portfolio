@@ -15,10 +15,10 @@
                   <img
                     src="@/assets/elements/tradekub/ProjectTradekub.png"
                     alt="Tradekub Logo"
-                    class="w-30 h-auto object-cover rounded-lg shadow-lg"
+                    class="w-32 h-auto object-cover rounded-lg shadow-lg"
                   />
                   <div class="flex flex-col mt-2">
-                    <span class="text-sm text-[#9D9E9E]">
+                    <span class="text-xs text-[#9D9E9E]">
                       {{ t("projects.tradekub.time") }}
                     </span>
                   </div>
@@ -57,7 +57,7 @@
                     class="w-20 h-auto object-cover rounded-lg shadow-lg"
                   />
                   <div class="flex flex-col mt-2">
-                    <span class="text-sm text-[#9D9E9E]">
+                    <span class="text-xs text-[#9D9E9E]">
                       {{ t("projects.modx.time") }}
                     </span>
                   </div>
