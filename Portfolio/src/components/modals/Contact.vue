@@ -4,7 +4,7 @@
       class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
     >
       <div
-        class="relative bg-[#1D1D1D] p-8 rounded-3xl shadow-2xl w-90 max-w-[80vw] border border-[#242424]"
+        class="relative bg-[#0C0C0C] p-8 rounded-3xl shadow-2xl w-90 max-w-[80vw] border border-[#242424]"
       >
         <button
           @click="$emit('close')"

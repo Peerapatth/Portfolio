@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="sticky text-base top-4 w-full bg-[#0C0C0C] text-[#9D9E9E] flex items-center justify-between py-4 z-50 shadow px-4 rounded-full"
+    class="sticky text-base top-6 w-full bg-[#0C0C0C] text-[#9D9E9E] flex items-center justify-between py-4 z-50 shadow px-4 rounded-full"
   >
     <div class="flex items-center relative z-50">
       <button @click="scrollToTop" class="hover:cursor-pointer">
@@ -16,6 +16,15 @@
           href="#about"
           @click="setActive('about')"
           >About</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:text-white transition"
+          :class="{ 'text-white font-semibold ': activeSection === 'skills' }"
+          href="#skills"
+          @click="setActive('skills')"
+          >Skills</a
         >
       </li>
       <li>
@@ -96,6 +105,15 @@
       <li>
         <a
           class="hover:text-white transition"
+          :class="{ 'text-white font-semibold ': activeSection === 'skills' }"
+          href="#skills"
+          @click="setActive('skills')"
+          >Skills</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:text-white transition"
           :class="{ 'text-white font-semibold ': activeSection === 'projects' }"
           href="#projects"
           @click="setActive('projects')"
@@ -147,7 +165,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import Peerapat from "@/assets/Peerapat.vue";
 import Menu from "@/assets/elements/Menu.vue";
@@ -155,7 +173,6 @@ import Close from "@/assets/elements/Close.vue";
 import Contact from "@/components/modals/Contact.vue";
 
 const showContactModal = ref(false);
-
 
 const props = defineProps({
   showLangOptions: Boolean,
@@ -166,23 +183,79 @@ const menuOpen = ref(false);
 const { locale } = useI18n();
 const activeSection = ref("hero");
 
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
-onBeforeUnmount(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
-function handleScroll() {
+const sectionIds = ["hero", "about", "skills", "projects"];
+const sectionOffsets = ref({});
+
+function updateSectionOffsets() {
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      sectionOffsets.value[id] = el.offsetTop;
+    }
+  });
+}
+
+function onScroll() {
+  const scrollPosition = window.scrollY + 100;
+  let current = "about";
+  for (let i = 0; i < sectionIds.length; i++) {
+    const id = sectionIds[i];
+    const nextId = sectionIds[i + 1];
+    const currentOffset = sectionOffsets.value[id] || 0;
+    const nextOffset = sectionOffsets.value[nextId] || Infinity;
+    if (scrollPosition >= currentOffset && scrollPosition < nextOffset) {
+      current = id;
+      break;
+    }
+  }
+  activeSection.value = current;
+
+  // Update hash: remove if hero, set otherwise
+  if (current === "hero") {
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname);
+    }
+  } else if (window.location.hash !== `#${current}`) {
+    history.replaceState(null, "", `#${current}`);
+  }
+
   menuOpen.value = false;
   emits("close-lang-options");
 }
 
+onMounted(async () => {
+  await nextTick();
+  updateSectionOffsets();
+
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("resize", updateSectionOffsets);
+
+  // Update offsets after all images load
+  const images = document.querySelectorAll("img");
+  images.forEach(img => {
+    img.addEventListener("load", updateSectionOffsets);
+  });
+
+  // Update offsets after full page load (including async content)
+  window.addEventListener("load", updateSectionOffsets);
+});
+
+// Update offsets after language change
+watch(locale, async () => {
+  await nextTick();
+  updateSectionOffsets();
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", onScroll);
+  window.removeEventListener("resize", updateSectionOffsets);
+  window.removeEventListener("load", updateSectionOffsets);
+});
+
 function toggleMenu() {
   menuOpen.value = !menuOpen.value;
   if (!menuOpen.value) {
-    {
-      emits("close-lang-options");
-    }
+    emits("close-lang-options");
   }
 }
 
@@ -192,6 +265,7 @@ function scrollToTop() {
   const element = document.getElementById("hero");
   if (element) {
     element.scrollIntoView({ behavior: "smooth" });
+    history.replaceState(null, "", window.location.pathname);
   }
 }
 
@@ -204,7 +278,16 @@ function setActive(section) {
   }
   const element = document.getElementById(section);
   if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
+    // Offset for sticky navbar
+    const yOffset = -100;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    // Update hash: remove if hero, set otherwise
+    if (section === "hero") {
+      history.replaceState(null, "", window.location.pathname);
+    } else {
+      history.replaceState(null, "", `#${section}`);
+    }
   }
 }
 

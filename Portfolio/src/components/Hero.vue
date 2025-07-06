@@ -1,5 +1,6 @@
 <template>
   <div
+    id="hero"
     class="w-full h-[100dvh] flex items-center justify-center bg-[#0C0C0C] text-white"
   >
     <div>
