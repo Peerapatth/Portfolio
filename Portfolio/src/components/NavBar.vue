@@ -4,7 +4,7 @@
   >
     <div class="flex items-center relative z-50">
       <button @click="scrollToTop" class="hover:cursor-pointer">
-        <Peerapat class="w-20 md:w-24 h-auto ml-2 md:ml-6" />
+        <Peerapat class="w-24 h-auto ml-2 md:ml-6" />
       </button>
     </div>
 
