@@ -1,0 +1,46 @@
+{
+  "hello": "Hello!",
+  "about": {
+    "firstname": "PEERAPAT",
+    "lastname": "PADTAWARO",
+    "role": "Software",
+    "roleSub": "Developer",
+    "address": {
+      "line1": "B9 64/2 The Room by SPK,",
+      "line2": "Phahonyothin Soi 15, Phaya Thai Subdistrict,",
+      "line3": "Bangkok, 10400"
+    },
+    "email": "peerapat.xiv@gmail.com",
+    "phone": "+66 (0) 09 174 5520",
+    "profileTitle": "ABOUT",
+    "profile": "I'm a Computer Engineering student at KMUTT with a strong interest in Frontend Development and UX/UI Design. My passion lies in creating seamless user experiences through clean and interactive interfaces. Currently learning and exploring the world of technology.",
+    "experienceTitle": "EXPERIENCE",
+    "experience": [
+      {
+        "logo": "@/assets/elements/HouseOfDev.vue",
+        "company": "House of Dev Technology",
+        "position": "Software Developer",
+        "duration": "1 yr 2 mos · On-site",
+        "type": "Part-time · Sep 2024 - Now",
+        "internship": "Internship · Jun - Aug 2024",
+        "location": "Bangkok, Thailand ",
+        "description": "Focusing primarily on Front-end development with Vue.js / Nuxt.js, working with developers and UX/UI designers to design user-friendly software that enhances user experience."
+      }
+    ],
+    "educationTitle": "EDUCATION",
+    "education": {
+      "kmutt": {
+        "name": "King Mongkut's University of Technology Thonburi",
+        "major": "Computer Engineering",
+        "degree": "Bachelor of Engineering - BE",
+        "year": "2021 - Present"
+      },
+      "srw": {
+        "name": "Sriboonruang Wittayakarn School",
+        "major": "Science Math Technology and Environment (SMTE)",
+        "degree": "High School Diploma",
+        "year": "2018 - 2021"
+      }
+    }
+  }
+}
