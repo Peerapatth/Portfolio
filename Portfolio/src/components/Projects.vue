@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="pt-8 pb-48 bg-[#0C0C0C]">
-    <div class="w-full p-6 md:p-8 text-white">
+    <div class="w-full p-8 md:p-8 text-white">
       <div class="container mx-auto">
         <div class="mt-8">
           <h1
