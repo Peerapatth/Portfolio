@@ -6,8 +6,8 @@
           <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
             {{ t("about.skillsTitle") }}
           </h1>
-          <div class="flex flex-col md:flex-row gap-8">
-            <div class="flex-1 w-full">
+          <div class="flex flex-col md:flex-row justify-between gap-8 mt-12">
+            <div class="flex flex-col">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.frontend") }}
               </h2>
@@ -26,7 +26,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1">
+            <div class="flex flex-col">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.backend") }}
               </h2>
@@ -45,7 +45,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1">
+            <div class="flex flex-col">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.languages") }}
               </h2>
@@ -64,7 +64,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1">
+            <div class="flex-flex-col">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.tools") }}
               </h2>

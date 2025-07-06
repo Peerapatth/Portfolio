@@ -97,6 +97,14 @@
                       <p class="text-sm text-[#9D9E9E] lg:mt-4">
                         {{ exp.duration }}
                       </p>
+                      <a
+                        v-if="exp.link"
+                        :href="exp.link"
+                        target="_blank"
+                        class="text-sm text-[#9D9E9E] hover:text-white transition underline hover:cursor-pointer"
+                      >
+                        Certificate
+                      </a>
                     </div>
                   </div>
                 </div>
