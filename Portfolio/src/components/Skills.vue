@@ -6,7 +6,7 @@
           <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
             {{ t("about.skillsTitle") }}
           </h1>
-          <div class="flex flex-col md:flex-row justify-between gap-8 mt-12">
+          <div class="flex flex-col md:flex-row justify-between gap-8 mt-8">
             <div class="flex flex-col">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.frontend") }}

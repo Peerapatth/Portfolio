@@ -8,7 +8,7 @@
           >
             {{ t("projects.title") }}
           </h1>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start mt-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start mt-12">
             <div class="flex flex-col gap-4">
               <div class="flex flex-row gap-4 items-center justify-between">
                 <div class="flex flex-row gap-4 items-center">
