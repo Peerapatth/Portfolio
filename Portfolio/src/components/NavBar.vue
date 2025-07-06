@@ -72,7 +72,7 @@
         </li>
         <li>
           <a
-            class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full"
+            class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full hover:cursor-pointer"
             @click="setActive('contact')"
             >Contact</a
           >
@@ -104,8 +104,7 @@
       </li>
       <li class="py-3">
         <a
-          class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full"
-          href="#contact"
+          class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full hover:cursor-pointer"
           @click="setActive('contact')"
           >Contact</a
         >
@@ -144,6 +143,7 @@
     </ul>
     <slot />
   </nav>
+  <Contact v-if="showContactModal" @close="showContactModal = false" />
 </template>
 
 <script setup>
@@ -152,6 +152,10 @@ import { useI18n } from "vue-i18n";
 import Peerapat from "@/assets/Peerapat.vue";
 import Menu from "@/assets/elements/Menu.vue";
 import Close from "@/assets/elements/Close.vue";
+import Contact from "@/components/modals/Contact.vue";
+
+const showContactModal = ref(false);
+
 
 const props = defineProps({
   showLangOptions: Boolean,
@@ -194,6 +198,10 @@ function scrollToTop() {
 function setActive(section) {
   activeSection.value = section;
   menuOpen.value = false;
+  if (section === "contact") {
+    showContactModal.value = true;
+    return;
+  }
   const element = document.getElementById(section);
   if (element) {
     element.scrollIntoView({ behavior: "smooth" });

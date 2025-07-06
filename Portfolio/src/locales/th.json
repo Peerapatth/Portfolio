@@ -7,7 +7,7 @@
     "roleSub": "Developer",
     "address": {
       "line1": "B9 64/2 The Room by SPK,",
-      "line2": "Phahonyothin Soi 15, Phaya Thai Subdistrict,",
+      "line2": "Phahonyothin Soi 15, Phaya Thai,",
       "line3": "Bangkok, 10400"
     },
     "email": "peerapat.xiv@gmail.com",
@@ -37,10 +37,17 @@
       },
       "srw": {
         "name": "Sriboonruang Wittayakarn School",
-        "major": "Science Math Technology and Environment (SMTE)",
+        "major": "Science Mathematics Technology and Environment (SMTE)",
         "degree": "High School Diploma",
         "year": "2018 - 2021"
       }
+    },
+    "skillsTitle": "SKILLS",
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "languages": "Languages"
     }
   }
 }

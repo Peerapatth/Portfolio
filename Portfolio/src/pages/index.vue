@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full h-full flex flex-col">
-    <Hero id="hero"/>
-    <About id="about"/>
-    <Projects id="projects"/>
+  <div class="w-full h-full flex flex-col relative">
+    <Hero id="hero" />
+    <About />
+    <Projects />
   </div>
 </template>
 

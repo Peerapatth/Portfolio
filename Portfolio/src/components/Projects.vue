@@ -1,13 +1,13 @@
 <template>
-  <div class="w-full h-[100dvh] flex items-center justify-center bg-[#0C0C0C] text-white">
-Project
+  <section id="projects" class="pt-16 bg-[#0C0C0C]">
+    <div class="w-full p-6 md:p-8 text-white">
+      <div class="container mx-auto">
+        <div class="h-[100vh] flex items-center justify-center">Project</div>
+      </div>
     </div>
+  </section>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>
