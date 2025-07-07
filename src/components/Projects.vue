@@ -247,7 +247,7 @@
               </div>
               <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
                 <img
-                  src="@/assets/images/hod/greeneryofnorth.webp"
+                  src="@/assets/images/hod/GreeneryOfNorth.webp"
                   alt="Greenery of North Screenshot"
                   class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
