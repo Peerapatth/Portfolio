@@ -175,7 +175,7 @@
               <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
                 <div class="flex flex-row gap-4 items-center">
                   <img
-                    src="@/assets/images/hod/Crystallyte.png"
+                    src="@/assets/images/hod/CrystalLyte.png"
                     alt="Crystallyte Logo"
                     class="w-32 h-auto object-cover rounded-lg"
                   />
