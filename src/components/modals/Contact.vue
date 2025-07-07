@@ -48,7 +48,7 @@
               alt="Email"
               class="w-6 h-6 rounded-full border border-[#9D9E9E]"
             />
-            <p class="text-gray-200 text-sm">{{ t("about.email") }}</p>
+            <p class="text-gray-200 text-sm">peerapat.xiv@gmail.com</p>
           </div>
           <div class="flex items-center gap-3">
             <img
@@ -81,7 +81,6 @@
             >
               <i class="bx bxl-github"></i>
             </a>
-        
           </div>
         </div>
       </div>
@@ -90,7 +89,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watchEffect } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
+
+// Define emits
+const emit = defineEmits(['close']);
 
 const textDisplay = "ontact!";
 const displayedText = ref("");
