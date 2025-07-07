@@ -13,11 +13,8 @@
     "email": "peerapat.xiv@gmail.com",
     "phone": "+66 (0) 09 174 5520",
     "profileTitle": "ABOUT",
-    "profile-1": 
-      "I’m passionate about technology and design, focused on creating seamless user experiences with intuitive and visually appealing interfaces. I specialize in front-end development using Vue.js and Nuxt.js, collaborating closely with designers and developers to build responsive, user-friendly applications.",
-    "profile-2": 
-      "I enjoy exploring new technologies, understanding user behavior, and bridging the gap between design and development to craft meaningful digital experiences. Always eager to learn and grow, I aim to contribute to innovative projects that push the boundaries of technology and design."
-    ,
+    "profile-1": "I’m passionate about technology and design, focused on creating seamless user experiences with intuitive and visually appealing interfaces. I specialize in front-end development using Vue.js and Nuxt.js, collaborating closely with designers and developers to build responsive, user-friendly applications.",
+    "profile-2": "I enjoy exploring new technologies, understanding user behavior, and bridging the gap between design and development to craft meaningful digital experiences. Always eager to learn and grow, I aim to contribute to innovative projects that push the boundaries of technology and design.",
     "experienceTitle": "EXPERIENCE",
     "experience": [
       {
@@ -65,6 +62,48 @@
   "projects": {
     "title": "WORK & PROJECTS",
     "description": "Here are some of my projects that showcase my skills and experience in software development. Each project highlights different aspects of my work, from front-end development to full-stack applications.",
+    "meiji": {
+      "name": "CP-Meiji x House of Dev Technology",
+      "time": "/ Jun 2025",
+      "description": "Developed interactive features for CP-Meiji's World Milk Day event, enabling visitors to engage with milk products through innovative digital experiences. Proud to contribute as a developer to making the event memorable and educational.",
+      "link": "https://www.facebook.com/share/v/1ECxGYDcTp/?mibextid=wwXIfr"
+    },
+    "HOD-Landing": {
+      "name": "HOD Landing Page",
+      "time": "/ Dec 2024",
+      "description": " is a landing page designed to showcase the services and expertise of House of Dev Technology. It features a modern and professional design, highlighting the company's offerings and providing easy navigation for potential clients.",
+      "link": "https://houseofdev.tech/"
+    },
+    "verscan": {
+      "name": "Verscan",
+      "time": "/ Dec 2024 - Mar 2025",
+      "description": "Integrated file upload into the Verscan system, added blog and partner sections to the landing page, along with speed improvements for a better user experience.",
+      "link": "https://www.verscan.com/"
+    },
+    "pocumi": {
+      "name": "Pocumi Landing Page",
+      "time": "/Nov - Dec 2024",
+      "description": "is a landing page for the Pocumi product, designed to introduce the solution and highlight how it improves efficiency and tracks procurement movements with a comprehensive and user-friendly approach.",
+      "link": "https://www.pocumi.com/"
+    },
+    "crystallyte": {
+      "name": "Crystallyte Landing Page",
+      "time": "/ Dec 2024",
+      "description": "is a landing page for Crystallyte, showcasing their innovative process for producing high-yield crystalline carbon nanomaterials from sources like CO₂ and plastic waste.",
+      "link": "https://crystallyte.com/"
+    },
+    "greeneryofnorth": {
+      "name": "Greenery of North",
+      "time": "/ Aug 2024",
+      "description": "is a landing page inviting travelers to experience Northern Thailand’s rainy season, highlighting lush landscapes, local culture, unique cuisine, and creative arts and activities.",
+      "link": "https://greeneryofnorth.in.th/"
+    },
+    "inu": {
+      "name": "INU 2",
+      "time": "/ Jun - Jul 2025",
+      "description": "is a web-based QMS for engineering education, featuring a new UI and expanded tools for TABEE and ABET accreditation, course data management, outcome tracking, and reporting.",
+      "link": "https://your-inu2-link.com"
+    },
     "tradekub": {
       "name": "Tradekub",
       "time": "/ Mar - Feb 2023",
@@ -76,6 +115,27 @@
       "time": "/ Sep - Dec 2023",
       "description": "is an online shopping platform designed specifically for the KMUTT bookstore. It provides a user-friendly interface for students and faculty to browse and purchase books and other educational materials.",
       "link": "https://github.com/JOKPOON/ModX"
+    },
+    "savorly": {
+      "name": "Savorly",
+      "time": "/ Apr - Jul 2024",
+      "description": ", your comprehensive meal companion designed to seamlessly address the challenges of your busy lifestyle.  to make your days more comfortable by revolutionizing the way you approach meals.",
+      "link": "https://www.behance.net/gallery/178419879/Savorly"
+    }
+  },
+  "certificates": {
+    "title": "CERTIFICATES",
+    "c1": {
+      "time": "May - Aug 2022 · 4 months",
+      "title": "Google UX Design Specialization",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/WCSPYVHZZQSY",
+      "desc": "Acquired proficiency in user research, prototyping, wireframing, and interaction design."
+    },
+    "c2": {
+      "time": "Sep - Dec 2023",
+      "title": "Advanced React",
+      "link": "https://www.coursera.org/account/accomplishments/verify/23N62QT9AYRP",
+      "desc": "6/9 Completed - Meta FrontEnd Developer Professional Certificate"
     }
   }
 }

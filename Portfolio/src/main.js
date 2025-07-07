@@ -1,8 +1,11 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import i18n from './locales/i18n.js'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import i18n from "./locales/i18n.js";
+import router from "./router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-createApp(App).use(i18n).use(router).mount('#app')
+AOS.init();
+createApp(App).use(i18n).use(router).mount("#app");

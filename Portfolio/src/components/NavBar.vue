@@ -36,6 +36,15 @@
           >Projects</a
         >
       </li>
+      <li>
+        <a
+          class="hover:text-white transition"
+          :class="{ 'text-white font-semibold ': activeSection === 'certificate' }"
+          href="#certificate"
+          @click="setActive('certificate')"
+          >Certificate</a
+        >
+      </li>
     </ul>
 
     <div class="flex items-center gap-4">
@@ -120,6 +129,15 @@
           >Projects</a
         >
       </li>
+      <li>
+        <a
+          class="hover:text-white transition"
+          :class="{ 'text-white font-semibold ': activeSection === 'certificate' }"
+          href="#certificate"
+          @click="setActive('certificate')"
+          >Certificate</a
+        >
+      </li>
       <li class="py-3">
         <a
           class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full hover:cursor-pointer"
@@ -171,6 +189,8 @@ import Peerapat from "@/assets/Peerapat.vue";
 import Menu from "@/assets/elements/Menu.vue";
 import Close from "@/assets/elements/Close.vue";
 import Contact from "@/components/modals/Contact.vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const showContactModal = ref(false);
 
@@ -191,6 +211,7 @@ function updateSectionOffsets() {
     const el = document.getElementById(id);
     if (el) {
       sectionOffsets.value[id] = el.offsetTop;
+      AOS.init();
     }
   });
 }
@@ -210,7 +231,6 @@ function onScroll() {
   }
   activeSection.value = current;
 
-  // Update hash: remove if hero, set otherwise
   if (current === "hero") {
     if (window.location.hash) {
       history.replaceState(null, "", window.location.pathname);
@@ -230,17 +250,14 @@ onMounted(async () => {
   window.addEventListener("scroll", onScroll);
   window.addEventListener("resize", updateSectionOffsets);
 
-  // Update offsets after all images load
   const images = document.querySelectorAll("img");
   images.forEach(img => {
     img.addEventListener("load", updateSectionOffsets);
   });
 
-  // Update offsets after full page load (including async content)
   window.addEventListener("load", updateSectionOffsets);
 });
 
-// Update offsets after language change
 watch(locale, async () => {
   await nextTick();
   updateSectionOffsets();
@@ -278,11 +295,10 @@ function setActive(section) {
   }
   const element = document.getElementById(section);
   if (element) {
-    // Offset for sticky navbar
+
     const yOffset = -100;
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: "smooth" });
-    // Update hash: remove if hero, set otherwise
     if (section === "hero") {
       history.replaceState(null, "", window.location.pathname);
     } else {

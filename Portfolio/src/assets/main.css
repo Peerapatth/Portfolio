@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background: #F2F2F2;
-  color: black;
+   background: #0C0C0C;
+  color-scheme: dark;
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100) !important;
   text-rendering: optimizeLegibility;
