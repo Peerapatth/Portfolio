@@ -14,7 +14,7 @@
       class="fixed bottom-4 right-4 bg-[#0C0C0C] text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-opacity duration-300 z-50 border border-[#181818] hover:cursor-pointer"
       aria-label="Back to top"
     >
-      <i class='bx bx-chevrons-up text-xl'></i>
+      <i class="bx bx-chevrons-up text-xl"></i>
     </button>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <footer class="w-full py-10 bg-[#0C0C0C] text-center text-[#9D9E9E] text-sm ">
-    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2 px-4">
+  <footer class="w-full  py-10 bg-[#0C0C0C] text-center text-[#9D9E9E] text-sm ">
+    <div class="container mx-auto  flex flex-col md:flex-row justify-between items-center gap-2 px-8">
       <div>
         © {{ new Date().getFullYear() }} Peerapat. All rights reserved.
       </div>

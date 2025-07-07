@@ -12,7 +12,7 @@
           </div>
         </div>
         <div data-aos="fade-up">
-          <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-8">
             <div
               class="bg-[#0C0C0C] rounded-xl p-6 shadow-lg flex-1 border border-[#181818]"
             >

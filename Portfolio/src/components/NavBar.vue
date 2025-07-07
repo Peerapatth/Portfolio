@@ -36,7 +36,7 @@
           >Projects</a
         >
       </li>
-      <li>
+      <!-- <li>
         <a
           class="hover:text-white transition"
           :class="{ 'text-white font-semibold ': activeSection === 'certificate' }"
@@ -44,7 +44,7 @@
           @click="setActive('certificate')"
           >Certificate</a
         >
-      </li>
+      </li> -->
     </ul>
 
     <div class="flex items-center gap-4">
@@ -129,7 +129,7 @@
           >Projects</a
         >
       </li>
-      <li>
+      <!-- <li>
         <a
           class="hover:text-white transition"
           :class="{ 'text-white font-semibold ': activeSection === 'certificate' }"
@@ -137,7 +137,7 @@
           @click="setActive('certificate')"
           >Certificate</a
         >
-      </li>
+      </li> -->
       <li class="py-3">
         <a
           class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full hover:cursor-pointer"

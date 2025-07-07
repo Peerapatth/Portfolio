@@ -125,17 +125,17 @@
   },
   "certificates": {
     "title": "CERTIFICATES",
-    "c1": {
-      "time": "May - Aug 2022 · 4 months",
-      "title": "Google UX Design Specialization",
-      "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/WCSPYVHZZQSY",
-      "desc": "Acquired proficiency in user research, prototyping, wireframing, and interaction design."
-    },
-    "c2": {
-      "time": "Sep - Dec 2023",
-      "title": "Advanced React",
-      "link": "https://www.coursera.org/account/accomplishments/verify/23N62QT9AYRP",
-      "desc": "6/9 Completed - Meta FrontEnd Developer Professional Certificate"
-    }
+  "c1": {
+  "time": "May - Aug 2022 · 4 months",
+  "title": "Google UX Design Specialization",
+  "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/WCSPYVHZZQSY",
+  "desc": "Completed an intensive, hands-on specialization focused on the core principles of user experience design. Developed expertise in conducting user research, creating wireframes and prototypes, and applying interaction design best practices. Gained practical experience in designing intuitive, user-centered digital products through real-world projects and collaborative assignments."
+},
+"c2": {
+  "time": "Sep - Dec 2023",
+  "title": "Advanced React",
+  "link": "https://www.coursera.org/account/accomplishments/verify/23N62QT9AYRP",
+  "desc": "Progressed through the Meta Front-End Developer Professional Certificate, completing 6 out of 9 courses. Acquired advanced skills in building scalable and maintainable React applications, including state management, component architecture, and performance optimization. Enhanced proficiency in modern front-end development workflows and best practices."
+}
   }
 }
