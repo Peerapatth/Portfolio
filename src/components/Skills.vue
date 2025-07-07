@@ -94,32 +94,32 @@
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 // Frontend icons
-import VueIcon from "@/assets/elements/skills/programming/Vue.png";
-import ReactIcon from "@/assets/elements/skills/programming/React.png";
-import NuxtJs from "@/assets/elements/skills/programming/NuxtJs.png";
-import NextJs from "@/assets/elements/skills/programming/NextJs.png";
+import VueIcon from "@/assets/elements/Skills/programming/Vue.png";
+import ReactIcon from "@/assets/elements/Skills/programming/React.png";
+import NuxtJs from "@/assets/elements/Skills/programming/NuxtJs.png";
+import NextJs from "@/assets/elements/Skills/programming/NextJs.png";
 
 // Backend icons
-import Firebase from "@/assets/elements/skills/programming/Firebase.png";
-import NodeJs from "@/assets/elements/skills/programming/NodeJs.png";
-import MongoDB from "@/assets/elements/skills/database/Mongo.png";
-import MySQL from "@/assets/elements/skills/programming/MySQL.png";
+import Firebase from "@/assets/elements/Skills/programming/Firebase.png";
+import NodeJs from "@/assets/elements/Skills/programming/NodeJs.png";
+import MongoDB from "@/assets/elements/Skills/database/Mongo.png";
+import MySQL from "@/assets/elements/Skills/programming/MySQL.png";
 
 // Tools
-import Figma from "@/assets/elements/skills/tools/Figma.png";
-import VSCode from "@/assets/elements/skills/tools/VS.png";
-import Git from "@/assets/elements/skills/tools/Git.png";
-import Bitbucket from "@/assets/elements/skills/tools/Bitbucket.png";
+import Figma from "@/assets/elements/Skills/tools/Figma.png";
+import VSCode from "@/assets/elements/Skills/tools/VS.png";
+import Git from "@/assets/elements/Skills/tools/Git.png";
+import Bitbucket from "@/assets/elements/Skills/tools/Bitbucket.png";
 
 // Programming languages
-import JS from "@/assets/elements/skills/programming/JS.png";
-import TS from "@/assets/elements/skills/programming/TS.png";
-import HTML from "@/assets/elements/skills/programming/HTML.png";
-import CSS from "@/assets/elements/skills/programming/CSS.png";
-import Go from "@/assets/elements/skills/programming/Go.png";
-import C from "@/assets/elements/skills/programming/C.png";
-import Python from "@/assets/elements/skills/programming/Python.png";
-import Tailwind from "@/assets/elements/skills/programming/Tailwind.png";
+import JS from "@/assets/elements/Skills/programming/JS.png";
+import TS from "@/assets/elements/Skills/programming/TS.png";
+import HTML from "@/assets/elements/Skills/programming/HTML.png";
+import CSS from "@/assets/elements/Skills/programming/CSS.png";
+import Go from "@/assets/elements/Skills/programming/Go.png";
+import C from "@/assets/elements/Skills/programming/C.png";
+import Python from "@/assets/elements/Skills/programming/Python.png";
+import Tailwind from "@/assets/elements/Skills/programming/Tailwind.png";
 
 const frontend = [
   { src: VueIcon, alt: "Vue" },
