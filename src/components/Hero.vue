@@ -84,7 +84,7 @@ import Me from "@/assets/images/Me.webp";
 const { t } = useI18n();
 
 
-const fullText = '"Exploring the world of development and enjoying the journey of turning ideas into code."';
+const fullText = '"Exploring the world of development and enjoying the journey of turning ideas into code"';
 const displayedText = ref('');
 const showCursor = ref(true);
 const currentIndex = ref(0);
