@@ -2,9 +2,9 @@
   <section id="about" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
           <div>
-            <div class="mt-8" data-aos="fade-up">
+            <div class="mt-16" data-aos="fade-up">
               <h1 
                 class="text-xl font-bold tracking-wide mb-4 text-white"
                 data-aos="fade-up" 
@@ -23,7 +23,7 @@
               </p>
             </div>
 
-            <div class="mt-8" data-aos="fade-up" data-aos-delay="120">
+            <div class="mt-16" data-aos="fade-up" data-aos-delay="120">
               <h1 
                 class="text-xl font-bold tracking-wide mb-4 text-white"
                 data-aos="fade-up" 
@@ -90,7 +90,7 @@
             </div>
           </div>
           <div class="flex flex-col">
-            <div class="mt-8" data-aos="fade-up" data-aos-delay="60">
+            <div class="mt-16" data-aos="fade-up" data-aos-delay="60">
               <h1 
                 class="text-xl font-bold tracking-wide mb-4 text-white"
                 data-aos="fade-up" 
