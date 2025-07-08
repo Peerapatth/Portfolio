@@ -63,10 +63,27 @@
   "projects": {
     "title": "WORK & PROJECTS",
     "description": "Here are some of my projects that showcase my skills and experience in software development. Each project highlights different aspects of my work, from front-end development to full-stack applications.",
-
+    "Toyota": {
+      "name": "Toyota - TMA2025",
+      "time": "/ June - July 2025",
+      "description": "",
+      "link": ""
+    },
+    "Journal": {
+      "name": "Journal Magnetic Attraction",
+      "time": "/ June 2025",
+      "description": "",
+      "link": ""
+    },
+    "Nivea": {
+      "name": "Nivea",
+      "time": "/ June 2025",
+      "description": "",
+      "link": ""
+    },
     "meiji": {
       "name": "CP-Meiji x House of Dev Technology",
-      "time": "/ Jun 2025",
+      "time": "/ May 2025",
       "description": "พัฒนาฟีเจอร์อินเทอร์แอกทีฟสำหรับงาน World Milk Day ของ CP-Meiji เพื่อให้ผู้เข้าร่วมงานสามารถมีส่วนร่วมกับผลิตภัณฑ์นมผ่านประสบการณ์ดิจิทัลสุดล้ำ รู้สึกภูมิใจที่ได้เป็นส่วนหนึ่งในฐานะนักพัฒนาเพื่อสร้างความประทับใจและมอบความรู้ในงานนี้",
       "link": "https://www.facebook.com/share/v/1ECxGYDcTp/?mibextid=wwXIfr"
     },
