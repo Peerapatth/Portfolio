@@ -5,7 +5,7 @@
         <div class="mt-8">
           <h1
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="100"
             class="text-xl font-bold tracking-wide mb-4 text-white w-full text-center"
           >
             {{ t("projects.title") }}
@@ -17,7 +17,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -42,7 +42,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.meiji.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -53,7 +53,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/Meiji.webp"
@@ -66,7 +66,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <HouseOfDev class="w-36 h-auto object-cover" />
@@ -87,7 +87,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.HOD-Landing.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -98,7 +98,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/HodLanding.webp"
@@ -112,7 +112,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -142,7 +142,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.bluuu.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -153,7 +153,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/BluuuMaid.png"
@@ -166,7 +166,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -191,7 +191,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.pocumi.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -202,7 +202,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/PocumiLanding.webp"
@@ -215,7 +215,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -240,7 +240,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.verscan.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -251,7 +251,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/Verscan.webp"
@@ -264,7 +264,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -289,7 +289,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.crystallyte.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -300,7 +300,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/CL.webp"
@@ -313,7 +313,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -338,7 +338,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.greeneryofnorth.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -349,7 +349,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/hod/GreeneryOfNorth.webp"
@@ -362,7 +362,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -387,7 +387,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.inu.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -398,7 +398,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/inu/Banner.webp"
@@ -411,7 +411,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -436,7 +436,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.tradekub.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -447,7 +447,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/tradekub/Banner.webp"
@@ -460,7 +460,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -485,7 +485,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.modx.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -496,7 +496,7 @@
               <div
                 class="w-full h-full flex items-center justify-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/modx/Mock.webp"
@@ -509,7 +509,7 @@
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
@@ -534,7 +534,7 @@
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-delay="300">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-base text-white">
                   {{ t("projects.savorly.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -545,7 +545,7 @@
               <div
                 class="flex flex-row gap-4 justify-center items-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
               >
                 <img
                   src="@/assets/images/savorly/Savorly.webp"

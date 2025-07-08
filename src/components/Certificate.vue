@@ -5,15 +5,17 @@
         <div data-aos="fade-up">
           <div class="mb-8">
             <h1
+              data-aos="fade-up"
               class="text-xl font-bold tracking-wide mb-4 text-white w-full text-center"
             >
               {{ t("certificates.title") }}
             </h1>
           </div>
         </div>
-        <div data-aos="fade-up">
+        <div >
           <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div
+            data-aos="fade-up"   data-aos-delay="100"
               class="bg-[#0C0C0C] rounded-xl p-6 shadow-lg flex-1 border border-[#181818]"
             >
               <p class="text-xs text-[#9D9E9E] mb-2">
@@ -34,6 +36,7 @@
               </p>
             </div>
             <div
+            data-aos="fade-up"   data-aos-delay="100"
               class="bg-[#0C0C0C] rounded-xl p-6 shadow-lg flex-1 border border-[#181818]"
             >
               <p class="text-xs text-[#9D9E9E] mb-2">

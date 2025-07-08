@@ -49,15 +49,16 @@
             <i class="bx bxl-github text-xl"></i>
           </a>
         </div>
-        <p
-          class="text-[#9D9E9E] text-sm md:text-base max-w-lg mx-auto leading-relaxed"
+        <div
+          class="text-[#9D9E9E] text-sm md:text-base max-w-lg mx-auto leading-relaxed min-h-[3rem] flex items-center justify-center"
           data-aos="fade-up"
           data-aos-delay="1000"
         >
-          "Exploring the world of development and enjoying the journey
-          <span class="hidden md:inline"><br /></span> 
-          of turning ideas into code."
-        </p>
+          <span class="typing-text">
+            {{ displayedText }}
+            <span class="cursor" :class="{ 'cursor-blink': showCursor }">|</span>
+          </span>
+        </div>
       </div>
     </div>
 
@@ -76,10 +77,46 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import { useI18n } from "vue-i18n";
 import Me from "@/assets/images/Me.webp";
 
 const { t } = useI18n();
+
+
+const fullText = '"Exploring the world of development and enjoying the journey of turning ideas into code."';
+const displayedText = ref('');
+const showCursor = ref(true);
+const currentIndex = ref(0);
+
+let typingInterval;
+let cursorInterval;
+
+const startTyping = () => {
+  cursorInterval = setInterval(() => {
+    showCursor.value = !showCursor.value;
+  }, 500);
+
+  setTimeout(() => {
+    typingInterval = setInterval(() => {
+      if (currentIndex.value < fullText.length) {
+        displayedText.value += fullText[currentIndex.value];
+        currentIndex.value++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 50);
+  }, 1500); 
+};
+
+onMounted(() => {
+  startTyping();
+});
+
+onUnmounted(() => {
+  if (typingInterval) clearInterval(typingInterval);
+  if (cursorInterval) clearInterval(cursorInterval);
+});
 </script>
 
 <style lang="css" scoped>
@@ -154,6 +191,15 @@ const { t } = useI18n();
   }
 }
 
+@keyframes cursorBlink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 .animate-bounce-gentle {
   animation: bounceGentle 2s infinite;
 }
@@ -176,5 +222,16 @@ const { t } = useI18n();
 
 .animate-social-float {
   animation: socialFloat 2s ease-in-out infinite;
+}
+
+
+.cursor {
+  color: #9D9E9E;
+  font-weight: normal;
+  animation: cursorBlink 1s infinite;
+}
+
+.cursor-blink {
+  animation: cursorBlink 1s infinite;
 }
 </style>

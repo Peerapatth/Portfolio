@@ -10,7 +10,7 @@
             {{ t("about.skillsTitle") }}
           </h1>
           <div class="flex flex-col md:flex-row justify-between gap-8 mt-8">
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="50">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.frontend") }}
               </h2>
@@ -20,7 +20,49 @@
                   :key="icon.alt"
                   class="flex flex-col items-center"
                   data-aos="zoom-in"
-                  :data-aos-delay="200 + (index * 100)"
+                  :data-aos-delay="50 + (index * 100)"
+                >
+                  <img
+                    :src="icon.src"
+                    :alt="icon.alt"
+                    class="w-10 h-10 object-contain mb-1"
+                  />
+                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="text-base mb-2 text-white">
+                {{ t("about.skills.backend") }}
+              </h2>
+              <div class="flex flex-wrap gap-4">
+                <div
+                  v-for="(icon, index) in backend"
+                  :key="icon.alt"
+                  class="flex flex-col items-center"
+                  data-aos="zoom-in"
+                  :data-aos-delay="100 + (index * 100)"
+                >
+                  <img
+                    :src="icon.src"
+                    :alt="icon.alt"
+                    class="w-10 h-10 object-contain mb-1"
+                  />
+                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="150">
+              <h2 class="text-base mb-2 text-white">
+                {{ t("about.skills.languages") }}
+              </h2>
+              <div class="flex flex-wrap gap-4">
+                <div
+                  v-for="(icon, index) in languages"
+                  :key="icon.alt"
+                  class="flex flex-col items-center"
+                  data-aos="zoom-in"
+                  :data-aos-delay="150 + (index * 100)"
                 >
                   <img
                     :src="icon.src"
@@ -33,48 +75,6 @@
             </div>
             <div class="flex flex-col" data-aos="fade-up" data-aos-delay="200">
               <h2 class="text-base mb-2 text-white">
-                {{ t("about.skills.backend") }}
-              </h2>
-              <div class="flex flex-wrap gap-4">
-                <div
-                  v-for="(icon, index) in backend"
-                  :key="icon.alt"
-                  class="flex flex-col items-center"
-                  data-aos="zoom-in"
-                  :data-aos-delay="600 + (index * 100)"
-                >
-                  <img
-                    :src="icon.src"
-                    :alt="icon.alt"
-                    class="w-10 h-10 object-contain mb-1"
-                  />
-                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="300">
-              <h2 class="text-base mb-2 text-white">
-                {{ t("about.skills.languages") }}
-              </h2>
-              <div class="flex flex-wrap gap-4">
-                <div
-                  v-for="(icon, index) in languages"
-                  :key="icon.alt"
-                  class="flex flex-col items-center"
-                  data-aos="zoom-in"
-                  :data-aos-delay="800 + (index * 100)"
-                >
-                  <img
-                    :src="icon.src"
-                    :alt="icon.alt"
-                    class="w-10 h-10 object-contain mb-1"
-                  />
-                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="400">
-              <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.tools") }}
               </h2>
               <div class="flex flex-wrap gap-4">
@@ -83,7 +83,7 @@
                   :key="icon.alt"
                   class="flex flex-col items-center"
                   data-aos="zoom-in"
-                  :data-aos-delay="1600 + (index * 100)"
+                  :data-aos-delay="200 + (index * 100)"
                 >
                   <img
                     :src="icon.src"
