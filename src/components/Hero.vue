@@ -77,7 +77,7 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
-import Me from "@/assets/images/Me.png";
+import Me from "@/assets/images/Me.webp";
 
 const { t } = useI18n();
 </script>
