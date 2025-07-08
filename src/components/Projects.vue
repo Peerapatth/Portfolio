@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="pt-8 bg-[#0C0C0C]">
+  <section id="projects" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 md:p-8 text-white">
       <div class="container mx-auto">
         <div class="mt-8">
@@ -9,10 +9,13 @@
             {{ t("projects.title") }}
           </h1>
           <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start mt-12"
+            class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start mt-12"
           >
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/hod/MeijiLogo.png"
@@ -44,7 +47,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/hod/Meiji.webp"
                   alt="Meiji Screenshot"
@@ -53,7 +59,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <HouseOfDev class="w-36 h-auto object-cover" />
                   <div class="flex flex-col mt-2">
@@ -81,7 +90,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/hod/HodLanding.webp"
                   alt="HOD Landing Screenshot"
@@ -89,9 +101,65 @@
                 />
               </div>
             </div>
+
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
-                <div class="flex flex-row gap-4 items-center" >
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
+                <div class="flex flex-row gap-4 items-center">
+                  <img
+                    src="@/assets/images/hod/Bluuu.png"
+                    alt="Bluuu Logo"
+                    class="w-16 h-auto object-cover rounded-lg"
+                    style="
+                      filter: brightness(0) saturate(100%) invert(100%)
+                        sepia(0%) saturate(7500%) hue-rotate(29deg)
+                        brightness(101%) contrast(101%);
+                    "
+                  />
+                  <div class="flex flex-col mt-2">
+                    <span class="text-xs text-[#9D9E9E]">
+                      {{ t("projects.bluuu.time") }}
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-4 justify-center items-center">
+                  <a
+                    :href="t('projects.bluuu.link')"
+                    target="_blank"
+                    class="flex flex-row gap-2 mt-2 justify-center items-center text-sm text-[#9D9E9E] hover:text-white transition"
+                  >
+                    <i class="bx bx-link text-2xl"></i>
+                    <div>Website</div>
+                  </a>
+                </div>
+              </div>
+              <div data-aos="fade-up">
+                <h2 class="text-base text-white">
+                  {{ t("projects.bluuu.name") }}
+                  <span class="text-sm text-[#9D9E9E]">
+                    {{ t("projects.bluuu.description") }}
+                  </span>
+                </h2>
+              </div>
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
+                <img
+                  src="@/assets/images/hod/BluuuMaid.png"
+                  alt="Bluuu Screenshot"
+                  class="w-full md:w-3/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
+                <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/hod/Pocumi.png"
                     alt="Pocumi Logo"
@@ -103,7 +171,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="flex flex-row gap-4 justify-center items-center" >
+                <div class="flex flex-row gap-4 justify-center items-center">
                   <a
                     :href="t('projects.pocumi.link')"
                     target="_blank"
@@ -114,7 +182,7 @@
                   </a>
                 </div>
               </div>
-              <div  data-aos="fade-up">
+              <div data-aos="fade-up">
                 <h2 class="text-base text-white">
                   {{ t("projects.pocumi.name") }}
                   <span class="text-sm text-[#9D9E9E]">
@@ -122,7 +190,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center"  data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/hod/PocumiLanding.webp"
                   alt="Pocumi Screenshot"
@@ -131,7 +202,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/hod/VerscanLogo.png"
@@ -163,7 +237,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/hod/Verscan.webp"
                   alt="Verscan Screenshot"
@@ -172,7 +249,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/hod/CrystalLyte.png"
@@ -204,7 +284,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/hod/CL.webp"
                   alt="Crystallyte"
@@ -213,7 +296,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/hod/GON.webp"
@@ -245,7 +331,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/hod/GreeneryOfNorth.webp"
                   alt="Greenery of North Screenshot"
@@ -254,7 +343,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/inu/INU2.png"
@@ -286,7 +378,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/inu/Banner.webp"
                   alt="Inu Screenshot"
@@ -295,7 +390,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/tradekub/ProjectTradekub.png"
@@ -327,7 +425,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/tradekub/Banner.webp"
                   alt="Tradekub Screenshot"
@@ -336,7 +437,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/modx/Logo.png"
@@ -368,7 +472,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="w-full h-full flex items-center justify-center" data-aos="fade-up">
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/modx/Mock.webp"
                   alt="ModX Screenshot"
@@ -377,7 +484,10 @@
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
-              <div class="flex flex-row gap-4 items-center justify-between" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+              >
                 <div class="flex flex-row gap-4 items-center">
                   <img
                     src="@/assets/images/savorly/Icon.png"
@@ -409,7 +519,10 @@
                   </span>
                 </h2>
               </div>
-              <div class="flex flex-row gap-4 justify-center items-center" data-aos="fade-up">
+              <div
+                class="flex flex-row gap-4 justify-center items-center"
+                data-aos="fade-up"
+              >
                 <img
                   src="@/assets/images/savorly/Savorly.webp"
                   alt="Savorly Screenshot"

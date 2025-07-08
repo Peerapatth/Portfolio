@@ -4,9 +4,9 @@
     <About />
     <Skills />
     <Projects />
-    <div class="grid md:grid-cols-2 grid-cols-1 gap-24 container mx-auto">
+
       <Certificate />
-    </div>
+
     <Footer />
     <button
       v-if="showBackToTop"

@@ -1,7 +1,7 @@
 <template>
   <section id="certificate" class="pt-8 bg-[#0C0C0C]">
-    <div class="w-full p-8 text-white">
-      <div class="container mx-auto">
+    <div class="w-full  text-white">
+      <div class="container mx-auto p-8">
         <div data-aos="fade-up">
           <div class="mb-8">
             <h1
@@ -12,7 +12,7 @@
           </div>
         </div>
         <div data-aos="fade-up">
-          <div class="flex flex-col gap-8">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div
               class="bg-[#0C0C0C] rounded-xl p-6 shadow-lg flex-1 border border-[#181818]"
             >

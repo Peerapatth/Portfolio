@@ -92,7 +92,7 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 // Define emits
-const emit = defineEmits(['close']);
+const emit = defineEmits(["close"]);
 
 const textDisplay = "ontact!";
 const displayedText = ref("");
@@ -105,12 +105,26 @@ const { t } = useI18n();
 
 onMounted(() => {
   let index = 0;
+  let isHolding = false;
+  let holdCounter = 0;
+  const holdDuration = 10;
+
   const interval = setInterval(() => {
-    displayedText.value = textDisplay.slice(0, index + 1);
-    index++;
-    if (index > textDisplay.length) {
-      index = 0;
-      displayedText.value = "";
+    if (!isHolding) {
+      displayedText.value = textDisplay.slice(0, index + 1);
+      index++;
+
+      if (index > textDisplay.length) {
+        isHolding = true;
+        holdCounter = 0;
+      }
+    } else {
+      holdCounter++;
+      if (holdCounter >= holdDuration) {
+        index = 0;
+        displayedText.value = "";
+        isHolding = false;
+      }
     }
   }, 300);
 

@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="pt-8 bg-[#0C0C0C]">
+  <section id="about" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 items-start">

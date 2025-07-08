@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="pt-8 bg-[#0C0C0C]">
+  <section id="skills" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
         <div class="mt-8">
