@@ -4,23 +4,39 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 items-start">
           <div>
-            <div class="mt-8">
-              <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
+            <div class="mt-8" data-aos="fade-up">
+              <h1 
+                class="text-xl font-bold tracking-wide mb-4 text-white"
+                data-aos="fade-up" 
+                data-aos-delay="100"
+              >
                 {{ t("about.profileTitle") }}
               </h1>
-              <p class="text-sm text-[#9D9E9E]">
+              <p 
+                class="text-sm text-[#9D9E9E]"
+                data-aos="fade-up" 
+                data-aos-delay="200"
+              >
                 {{ t("about.profile-1") }} <br />
                 <br />
                 {{ t("about.profile-2") }}
               </p>
             </div>
 
-            <div class="mt-8">
-              <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="300">
+              <h1 
+                class="text-xl font-bold tracking-wide mb-4 text-white"
+                data-aos="fade-up" 
+                data-aos-delay="400"
+              >
                 {{ t("about.educationTitle") }}
               </h1>
               <div class="flex flex-col gap-6">
-                <div class="flex gap-4 items-center">
+                <div 
+                  class="flex gap-4 items-center"
+                  data-aos="fade-right" 
+                  data-aos-delay="500"
+                >
                   <div
                     class="w-16 h-auto aspect-square flex items-center justify-center"
                   >
@@ -45,7 +61,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-center gap-4">
+                <div 
+                  class="flex items-center gap-4"
+                  data-aos="fade-right" 
+                  data-aos-delay="600"
+                >
                   <div
                     class="w-16 h-auto aspect-square flex items-center justify-center"
                   >
@@ -70,14 +90,20 @@
             </div>
           </div>
           <div class="flex flex-col">
-            <div class="mt-8">
-              <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
+              <h1 
+                class="text-xl font-bold tracking-wide mb-4 text-white"
+                data-aos="fade-up" 
+                data-aos-delay="300"
+              >
                 {{ t("about.experienceTitle") }}
               </h1>
               <div
                 v-for="(exp, idx) in experience"
                 :key="idx"
                 class="mb-6 rounded-lg"
+                data-aos="fade-left" 
+                :data-aos-delay="100 + (idx * 200)"
               >
                 <div class="flex flex-col w-full">
                   <div class="flex flex-col lg:flex-row gap-4 items-end mt-4">
@@ -111,18 +137,30 @@
                 <p class="mt-3 text-sm text-[#9D9E9E]">{{ exp.description }}</p>
               </div>
             </div>
-            <div class="mt-8">
-              <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
+              <h1 
+                class="text-xl font-bold tracking-wide mb-4 text-white"
+                data-aos="fade-up" 
+                data-aos-delay="200"
+              >
                 {{ t("about.languagesTitle") }}
               </h1>
               <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-2">
+                <div 
+                  class="flex items-center gap-2"
+                  data-aos="fade-left" 
+                  data-aos-delay="300"
+                >
                   <span class="text-white">{{ t("about.languages.en") }}</span>
                   <span class="text-sm text-[#9D9E9E]">
                     / {{ t("about.languages.en-level") }}
                   </span>
                 </div>
-                <div class="flex items-center gap-2">
+                <div 
+                  class="flex items-center gap-2"
+                  data-aos="fade-left" 
+                  data-aos-delay="400"
+                >
                   <span class="text-white">{{ t("about.languages.th") }}</span>
                   <span class="text-sm text-[#9D9E9E]">
                     / {{ t("about.languages.th-level") }}

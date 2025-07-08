@@ -3,19 +3,24 @@
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
         <div class="mt-8">
-          <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
+          <h1 
+            class="text-xl font-bold tracking-wide mb-4 text-white"
+            data-aos="fade-up"
+          >
             {{ t("about.skillsTitle") }}
           </h1>
           <div class="flex flex-col md:flex-row justify-between gap-8 mt-8">
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="100">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.frontend") }}
               </h2>
               <div class="flex flex-wrap gap-4">
                 <div
-                  v-for="icon in frontend"
+                  v-for="(icon, index) in frontend"
                   :key="icon.alt"
                   class="flex flex-col items-center"
+                  data-aos="zoom-in"
+                  :data-aos-delay="200 + (index * 100)"
                 >
                   <img
                     :src="icon.src"
@@ -26,15 +31,17 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="200">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.backend") }}
               </h2>
               <div class="flex flex-wrap gap-4">
                 <div
-                  v-for="icon in backend"
+                  v-for="(icon, index) in backend"
                   :key="icon.alt"
                   class="flex flex-col items-center"
+                  data-aos="zoom-in"
+                  :data-aos-delay="600 + (index * 100)"
                 >
                   <img
                     :src="icon.src"
@@ -45,15 +52,17 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="300">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.languages") }}
               </h2>
               <div class="flex flex-wrap gap-4">
                 <div
-                  v-for="icon in languages"
+                  v-for="(icon, index) in languages"
                   :key="icon.alt"
                   class="flex flex-col items-center"
+                  data-aos="zoom-in"
+                  :data-aos-delay="800 + (index * 100)"
                 >
                   <img
                     :src="icon.src"
@@ -64,15 +73,17 @@
                 </div>
               </div>
             </div>
-            <div class="flex-flex-col">
+            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="400">
               <h2 class="text-base mb-2 text-white">
                 {{ t("about.skills.tools") }}
               </h2>
               <div class="flex flex-wrap gap-4">
                 <div
-                  v-for="icon in tools"
+                  v-for="(icon, index) in tools"
                   :key="icon.alt"
                   class="flex flex-col items-center"
+                  data-aos="zoom-in"
+                  :data-aos-delay="1600 + (index * 100)"
                 >
                   <img
                     :src="icon.src"
