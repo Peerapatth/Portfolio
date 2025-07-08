@@ -2,7 +2,7 @@
   <section id="about" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2  md:gap-24 items-start">
           <div>
             <div class="mt-16" data-aos="fade-up">
               <h1 
