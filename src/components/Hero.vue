@@ -36,18 +36,50 @@
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          <a
-            href="#"
-            class="text-[#9D9E9E] hover:text-white transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
-          >
-            <i class="bx bxl-linkedin text-xl"></i>
-          </a>
-          <a
-            href="#"
-            class="text-[#9D9E9E] hover:text-white transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
-          >
-            <i class="bx bxl-github text-xl"></i>
-          </a>
+          <div class="relative group">
+            <a
+              href="https://www.linkedin.com/in/peerapatpadt/"
+              target="_blank"
+              class="text-[#9D9E9E] hover:text-white transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+            >
+              <i class="bx bxl-linkedin text-xl"></i>
+            </a>
+            <div
+              class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#181818] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+            >
+              LinkedIn
+            </div>
+          </div>
+
+          <div class="relative group">
+            <a
+              href="https://github.com/Peerapatth"
+              target="_blank"
+              class="text-[#9D9E9E] hover:text-white transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+            >
+              <i class="bx bxl-github text-xl"></i>
+            </a>
+            <div
+              class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#181818] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+            >
+              GitHub
+            </div>
+          </div>
+
+          <div class="relative group">
+            <a
+              href="https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Work?node-id=1045-147&t=K6UzsQai4racBCIC-0&scaling=min-zoom&content-scaling=fixed&page-id=560%3A2"
+              target="_blank"
+              class="text-[#9D9E9E] hover:text-white transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+            >
+              <i class="bx bx-code-alt text-xl"></i>
+            </a>
+            <div
+              class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#181818] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+            >
+              CV
+            </div>
+          </div>
         </div>
         <div
           class="text-[#9D9E9E] text-sm md:text-base max-w-lg mx-auto leading-relaxed min-h-[3rem] flex items-center justify-center"
@@ -56,7 +88,9 @@
         >
           <span class="typing-text">
             {{ displayedText }}
-            <span class="cursor" :class="{ 'cursor-blink': showCursor }">|</span>
+            <span class="cursor" :class="{ 'cursor-blink': showCursor }"
+              >|</span
+            >
           </span>
         </div>
       </div>
@@ -77,15 +111,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
 import Me from "@/assets/images/Me.webp";
 
 const { t } = useI18n();
 
-
-const fullText = '"Exploring the world of development and enjoying the journey of turning ideas into code."';
-const displayedText = ref('');
+const fullText =
+  '"Exploring the world of development and enjoying the journey of turning ideas into code."';
+const displayedText = ref("");
 const showCursor = ref(true);
 const currentIndex = ref(0);
 
@@ -106,7 +140,7 @@ const startTyping = () => {
         clearInterval(typingInterval);
       }
     }, 50);
-  }, 1500); 
+  }, 1500);
 };
 
 onMounted(() => {
@@ -192,10 +226,12 @@ onUnmounted(() => {
 }
 
 @keyframes cursorBlink {
-  0%, 50% {
+  0%,
+  50% {
     opacity: 1;
   }
-  51%, 100% {
+  51%,
+  100% {
     opacity: 0;
   }
 }
@@ -224,9 +260,8 @@ onUnmounted(() => {
   animation: socialFloat 2s ease-in-out infinite;
 }
 
-
 .cursor {
-  color: #9D9E9E;
+  color: #9d9e9e;
   font-weight: normal;
   animation: cursorBlink 1s infinite;
 }
