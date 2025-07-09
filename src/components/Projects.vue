@@ -103,7 +103,7 @@
                 <img
                   src="@/assets/images/hod/HodLanding2.webp"
                   alt="HOD Landing Screenshot"
-                  class="w-full  md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -158,7 +158,7 @@
                 <img
                   src="@/assets/images/hod/BluuuMock.webp"
                   alt="Bluuu Screenshot"
-                  class="w-full md:w-3/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -207,7 +207,7 @@
                 <img
                   src="@/assets/images/hod/PocumiLanding.webp"
                   alt="Pocumi Screenshot"
-                  class="w-full md:w-3/5 h-auto object-cover rounded-xl mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full md:w-4/5 h-auto object-cover rounded-xl mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -256,7 +256,7 @@
                 <img
                   src="@/assets/images/hod/Verscan.webp"
                   alt="Verscan Screenshot"
-                  class="w-full md:w-3/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -305,7 +305,7 @@
                 <img
                   src="@/assets/images/hod/CL.webp"
                   alt="Crystallyte"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -354,7 +354,7 @@
                 <img
                   src="@/assets/images/hod/GreeneryOfNorth.webp"
                   alt="Greenery of North Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -403,7 +403,7 @@
                 <img
                   src="@/assets/images/inu/Banner.webp"
                   alt="Inu Screenshot"
-                  class="w-full  md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full md:w-[90%]  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
