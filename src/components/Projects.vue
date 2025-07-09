@@ -505,7 +505,7 @@
                 />
               </div>
             </div>
-            <div class="flex flex-col gap-4 h-full">
+            <div class="flex flex-col gap-4 h-full w-full">
               <div
                 class="flex flex-row gap-4 items-center justify-between"
                 data-aos="fade-up"
