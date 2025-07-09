@@ -118,7 +118,7 @@
                   <img
                     src="@/assets/images/hod/Bluuu.png"
                     alt="Bluuu Logo"
-                    class="w-16 h-auto object-cover rounded-lg"
+                    class="w-16 h-auto object-cover"
                     style="
                       filter: brightness(0) saturate(100%) invert(100%)
                         sepia(0%) saturate(7500%) hue-rotate(29deg)
@@ -156,7 +156,7 @@
                 data-aos-delay="100"
               >
                 <img
-                  src="@/assets/images/hod/BluuuMaid.png"
+                  src="@/assets/images/hod/BluuuMock.webp"
                   alt="Bluuu Screenshot"
                   class="w-full md:w-3/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
