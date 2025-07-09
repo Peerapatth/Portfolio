@@ -550,7 +550,7 @@
                 <img
                   src="@/assets/images/savorly/Savorly.webp"
                   alt="Savorly Screenshot"
-                  class="w-4/5 md:w-3/4 h-auto object-cover rounded-lg mt-6 hover:scale-105 transition-transform duration-300"
+                  class="w-4/5 md:w-3/4 h-auto object-cover rounded-lg -mr-12 mt-6 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
