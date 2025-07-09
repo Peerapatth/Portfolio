@@ -543,7 +543,7 @@
                 </h2>
               </div>
               <div
-                class="flex flex-row gap-4 justify-center items-center"
+                class="flex flex-row gap-4 justify-center items-center w-full"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
