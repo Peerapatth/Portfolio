@@ -105,68 +105,61 @@
       </div>
     </div>
 
-    <Transition name="scroll-fade">
+    <div
+      v-if="showScroll"
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden lg:block ml-[10px]"
+    >
       <div
-        v-if="showScroll"
-        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden lg:block ml-[10px]"
+        class="w-5 h-8 border-2 border-[#9D9E9E] rounded-full flex justify-center"
       >
         <div
-          class="w-5 h-8 border-2 border-[#9D9E9E] rounded-full flex justify-center"
-        >
-          <div
-            class="w-1 h-2 bg-[#9D9E9E] rounded-full mt-1 animate-scroll-dot"
-          ></div>
-        </div>
+          class="w-1 h-2 bg-[#9D9E9E] rounded-full mt-1 animate-scroll-dot"
+        ></div>
       </div>
-    </Transition>
-    <Transition name="scroll-fade">
+    </div>
+
+    <div
+      v-if="showScroll"
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-30 lg:hidden"
+    >
       <div
-        v-if="showScroll"
-        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-30 lg:hidden"
+        class="relative flex items-center justify-center"
+        style="width: 75px; height: 75px"
       >
         <div
-          class="relative flex items-center justify-center"
-          style="width: 75px; height: 75px"
+          class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]"
+        ></div>
+        <svg
+          class="absolute inset-0"
+          width="75"
+          height="75"
+          viewBox="0 0 75 75"
+          :style="{ transform: `rotate(${scrollAngle}deg)` }"
         >
-          <div
-            class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]"
-          ></div>
-          <svg
-            class="absolute inset-0"
-            width="75"
-            height="75"
-            viewBox="0 0 75 75"
-            :style="{ transform: `rotate(${scrollAngle}deg)` }"
+          <defs>
+            <path
+              id="circlePath"
+              d="M 37.5,37.5 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"
+            />
+          </defs>
+          <text
+            fill="#9D9E9E"
+            font-size="6"
+            font-family="Inter, sans-serif"
+            font-weight="600"
+            letter-spacing="1"
           >
-            <defs>
-              <path
-                id="circlePath"
-                d="M 37.5,37.5 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"
-              />
-            </defs>
-            <text
-              fill="#9D9E9E"
-              font-size="6"
-              font-family="Inter, sans-serif"
-              font-weight="600"
-              letter-spacing="1"
-            >
-              <textPath
-                xlink:href="#circlePath"
-                startOffset="0"
-                textLength="176"
-              >
-                &nbsp; Scroll down • Scroll down •
-              </textPath>
-            </text>
-          </svg>
-          <span
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-[#9D9E9E] font-bold select-none"
-            >↓</span
-          >
-        </div>
+            <textPath xlink:href="#circlePath" startOffset="0" textLength="176">
+              &nbsp; Scroll down • Scroll down •
+            </textPath>
+          </text>
+        </svg>
+        <span
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-[#9D9E9E] font-bold select-none"
+          >↓</span
+        >
       </div>
-    </Transition>
+    </div>
   </div>
 </template>
 
@@ -332,30 +325,6 @@ onUnmounted(() => {
 </script>
 
 <style lang="css" scoped>
-.scroll-fade-enter-active {
-  animation: scrollPopIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.scroll-fade-leave-active {
-  animation: scrollPopIn 0.3s reverse;
-}
-@keyframes scrollPopIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3) translateX(-50%) translateY(40px) rotate(-10deg);
-    filter: blur(6px);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1.1) translateX(-50%) translateY(-8px) rotate(2deg);
-    filter: blur(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateX(-50%) translateY(0) rotate(0deg);
-    filter: blur(0);
-  }
-}
-
 @keyframes bounceGentle {
   0%,
   20%,
