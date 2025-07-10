@@ -4,9 +4,7 @@
     <About />
     <Skills />
     <Projects />
-
-      <Certificate />
-
+    <Certificate />
     <Footer />
     <button
       v-if="showBackToTop"
@@ -53,4 +51,5 @@ onUnmounted(() => {
 });
 </script>
 
-<style lang=" css" scoped></style>
+<style lang="css" scoped>
+</style>

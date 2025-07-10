@@ -2,7 +2,17 @@
   <div
     id="hero"
     class="w-full h-[100dvh] flex flex-col items-center justify-center bg-[#0C0C0C] text-white relative overflow-hidden"
+    @mousemove="handleMouseMove"
+    @mouseleave="resetGrid"
   >
+
+  <div class="highlight-center"></div>
+
+    <canvas
+      ref="gridCanvas"
+      class="absolute inset-0 w-full h-full pointer-events-none z-0"
+    ></canvas>
+
     <div class="container mx-auto p-8 z-10">
       <div class="flex justify-center mb-6" data-aos="fade-up">
         <div class="relative">
@@ -11,7 +21,7 @@
           >
             <img
               :src="Me"
-              :alt="t('hero.imageAlt')"
+              alt="Peerapat Padt"
               class="w-36 h-36 rounded-full object-cover border-4 border-[#CDFF04]/20 shadow-2xl transition-transform duration-300 hover:scale-105 animate-mouth-interaction"
             />
           </div>
@@ -143,13 +153,109 @@ const startTyping = () => {
   }, 1500);
 };
 
+const gridCanvas = ref(null);
+let animationFrame;
+let gridAnimTime = 0;
+let hoverX = null;
+let hoverY = null;
+
+const gridSize = 40;
+let gridPoints = [];
+
+function initGridPoints(width, height) {
+  gridPoints = [];
+  for (let x = -gridSize; x < width; x += gridSize) {
+    for (let y = -gridSize; y < height; y += gridSize) {
+      gridPoints.push({
+        x,
+        y,
+        hoverStrength: 0, 
+      });
+    }
+  }
+}
+
+function drawGrid(ctx, width, height, animTime, hoverX, hoverY) {
+  ctx.clearRect(0, 0, width, height);
+
+  let vignette = ctx.createRadialGradient(
+    width / 2,
+    height / 2,
+    Math.min(width, height) * 0.4,
+    width / 2,
+    height / 2,
+    Math.max(width, height) * 0.5
+  );
+
+  ctx.fillStyle = vignette;
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.save();
+
+  for (const point of gridPoints) {
+    let target = 0;
+    if (
+      hoverX !== null &&
+      hoverY !== null &&
+      Math.hypot(point.x - hoverX, point.y - hoverY) < 50
+    ) {
+      target = 1;
+    }
+    point.hoverStrength += (target - point.hoverStrength) * 0.15;
+
+    ctx.beginPath();
+    ctx.arc(point.x, point.y, 1.5, 0, Math.PI * 2);
+    ctx.closePath();
+    const alpha = 0.12 + 0.68 * point.hoverStrength;
+    ctx.fillStyle = `rgba(205,255,4,${alpha})`;
+    ctx.shadowColor = "#CDFF04";
+    ctx.shadowBlur = 8 * point.hoverStrength;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+  ctx.restore();
+}
+
+function animateGrid() {
+  const canvas = gridCanvas.value;
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const width = (canvas.width = canvas.offsetWidth);
+  const height = (canvas.height = canvas.offsetHeight);
+
+  if (
+    gridPoints.length === 0 ||
+    Math.abs(gridPoints[gridPoints.length - 1].x - width) > gridSize ||
+    Math.abs(gridPoints[gridPoints.length - 1].y - height) > gridSize
+  ) {
+    initGridPoints(width, height);
+  }
+
+  gridAnimTime += 8;
+  drawGrid(ctx, width, height, gridAnimTime, hoverX, hoverY);
+  animationFrame = requestAnimationFrame(animateGrid);
+}
+
+function handleMouseMove(e) {
+  const rect = gridCanvas.value.getBoundingClientRect();
+  hoverX = e.clientX - rect.left;
+  hoverY = e.clientY - rect.top;
+}
+
+function resetGrid() {
+  hoverX = null;
+  hoverY = null;
+}
+
 onMounted(() => {
   startTyping();
+  animateGrid();
 });
 
 onUnmounted(() => {
   if (typingInterval) clearInterval(typingInterval);
   if (cursorInterval) clearInterval(cursorInterval);
+  if (animationFrame) cancelAnimationFrame(animationFrame);
 });
 </script>
 
@@ -268,5 +374,20 @@ onUnmounted(() => {
 
 .cursor-blink {
   animation: cursorBlink 1s infinite;
+}
+
+canvas {
+  transition: opacity 0.5s;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.highlight-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, transparent 10%, #0C0C0C 100%);
 }
 </style>

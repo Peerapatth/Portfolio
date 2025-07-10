@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="sticky text-base top-6 w-full bg-[#0C0C0C] text-[#9D9E9E] flex items-center justify-between py-4 z-50 shadow px-4 rounded-full"
+    class="sticky text-base top-6 w-full bg-glass-prism text-[#9D9E9E] flex items-center justify-between py-4 z-50 shadow px-4 rounded-full"
   >
     <div class="flex items-center relative z-50">
       <button @click="scrollToTop" class="hover:cursor-pointer">
@@ -342,5 +342,11 @@ function selectLang(lang) {
 
 .drop-shadow-box {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bg-glass-prism {
+  background: rgba(12, 12, 12, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid #0C0C0C;
 }
 </style>
