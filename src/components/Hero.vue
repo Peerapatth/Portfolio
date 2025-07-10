@@ -106,6 +106,7 @@
     </div>
 
     <div
+      v-if="showScroll"
       class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden lg:block ml-[10px]"
     >
       <div
@@ -117,50 +118,48 @@
       </div>
     </div>
 
-  <!-- filepath: d:\Portfolio\src\components\Hero.vue -->
-<div
-  class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-30"
->
-  <div
-    class="relative flex items-center justify-center"
-    style="width: 75px; height: 75px;"
-  >
-    <div class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]"></div>
-    <svg
-      class="absolute inset-0"
-      width="75"
-      height="75"
-      viewBox="0 0 75 75"
-      :style="{ transform: `rotate(${scrollAngle}deg)` }"
+    <div
+      v-if="showScroll"
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-30 lg:hidden"
     >
-      <defs>
-        <path
-          id="circlePath"
-          d="M 37.5,37.5 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"
-        />
-      </defs>
-      <text
-        fill="#9D9E9E"
-        font-size="6"
-        font-family="Inter, sans-serif"
-        font-weight="600"
-        letter-spacing="1"
+      <div
+        class="relative flex items-center justify-center"
+        style="width: 75px; height: 75px"
       >
-        <textPath
-          xlink:href="#circlePath"
-          startOffset="0"
-          textLength="176"
+        <div
+          class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]"
+        ></div>
+        <svg
+          class="absolute inset-0"
+          width="75"
+          height="75"
+          viewBox="0 0 75 75"
+          :style="{ transform: `rotate(${scrollAngle}deg)` }"
         >
-        &nbsp;  Scroll down • Scroll down •
-        </textPath>
-      </text>
-    </svg>
-    <span
-      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-[#9D9E9E] font-bold select-none"
-      >↓</span
-    >
-  </div>
-</div>
+          <defs>
+            <path
+              id="circlePath"
+              d="M 37.5,37.5 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"
+            />
+          </defs>
+          <text
+            fill="#9D9E9E"
+            font-size="6"
+            font-family="Inter, sans-serif"
+            font-weight="600"
+            letter-spacing="1"
+          >
+            <textPath xlink:href="#circlePath" startOffset="0" textLength="176">
+              &nbsp; Scroll down • Scroll down •
+            </textPath>
+          </text>
+        </svg>
+        <span
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-[#9D9E9E] font-bold select-none"
+          >↓</span
+        >
+      </div>
+    </div>
   </div>
 </template>
 
@@ -170,6 +169,14 @@ import { useI18n } from "vue-i18n";
 import Me from "@/assets/images/Me.webp";
 
 const { t } = useI18n();
+
+const showScroll = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    showScroll.value = true;
+  }, 6500);
+});
 
 const scrollAngle = ref(0);
 
