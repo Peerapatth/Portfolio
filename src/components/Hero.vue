@@ -117,47 +117,50 @@
       </div>
     </div>
 
-    <div
-      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-20 lg:hidden"
+  <!-- filepath: d:\Portfolio\src\components\Hero.vue -->
+<div
+  class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-30"
+>
+  <div
+    class="relative flex items-center justify-center"
+    style="width: 75px; height: 75px;"
+  >
+    <div class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]"></div>
+    <svg
+      class="absolute inset-0"
+      width="75"
+      height="75"
+      viewBox="0 0 75 75"
+      :style="{ transform: `rotate(${scrollAngle}deg)` }"
     >
-      <div
-        class="relative flex items-center justify-center"
-        style="width: 100px; height: 100px"
+      <defs>
+        <path
+          id="circlePath"
+          d="M 37.5,37.5 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"
+        />
+      </defs>
+      <text
+        fill="#9D9E9E"
+        font-size="6"
+        font-family="Inter, sans-serif"
+        font-weight="600"
+        letter-spacing="1"
       >
-        <div
-          class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]  "
-        ></div>
-        <svg
-          class="absolute inset-0 p-1"
-          width="100"
-          height="100"
-          viewBox="0 0 100 100"
-          :style="{ transform: `rotate(${scrollAngle}deg)` }"
+        <textPath
+          xlink:href="#circlePath"
+          startOffset="0"
+          textLength="176"
         >
-          <defs>
-            <path
-              id="circlePath"
-              d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
-            />
-          </defs>
-          <text
-            fill="#9D9E9E"
-            font-size="10"
-            font-family="sans-serif"
-            font-weight="500"
-            letter-spacing="1"
-          >
-            <textPath xlink:href="#circlePath" startOffset="0" textLength="238">
-              &nbsp; Scroll down • Scroll down •  
-            </textPath>
-          </text>
-        </svg>
-        <span
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xl text-[#9D9E9E] select-none"
-          >↓</span
-        >
-      </div>
-    </div>
+        &nbsp;  Scroll down • Scroll down •
+        </textPath>
+      </text>
+    </svg>
+    <span
+      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-[#9D9E9E] font-bold select-none"
+      >↓</span
+    >
+  </div>
+</div>
   </div>
 </template>
 
