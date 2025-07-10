@@ -5,8 +5,7 @@
     @mousemove="handleMouseMove"
     @mouseleave="resetGrid"
   >
-
-  <div class="highlight-center"></div>
+    <div class="highlight-center"></div>
 
     <canvas
       ref="gridCanvas"
@@ -107,7 +106,7 @@
     </div>
 
     <div
-      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden lg:block"
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden lg:block ml-[10px]"
     >
       <div
         class="w-5 h-8 border-2 border-[#9D9E9E] rounded-full flex justify-center"
@@ -115,6 +114,48 @@
         <div
           class="w-1 h-2 bg-[#9D9E9E] rounded-full mt-1 animate-scroll-dot"
         ></div>
+      </div>
+    </div>
+
+    <div
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none z-20 lg:hidden"
+    >
+      <div
+        class="relative flex items-center justify-center"
+        style="width: 100px; height: 100px"
+      >
+        <div
+          class="absolute inset-0 rounded-full border border-[#181818] bg-[#0C0C0C]  "
+        ></div>
+        <svg
+          class="absolute inset-0 p-1"
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          :style="{ transform: `rotate(${scrollAngle}deg)` }"
+        >
+          <defs>
+            <path
+              id="circlePath"
+              d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
+            />
+          </defs>
+          <text
+            fill="#9D9E9E"
+            font-size="10"
+            font-family="sans-serif"
+            font-weight="500"
+            letter-spacing="1"
+          >
+            <textPath xlink:href="#circlePath" startOffset="0" textLength="238">
+              &nbsp; Scroll down • Scroll down •  
+            </textPath>
+          </text>
+        </svg>
+        <span
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xl text-[#9D9E9E] select-none"
+          >↓</span
+        >
       </div>
     </div>
   </div>
@@ -126,6 +167,20 @@ import { useI18n } from "vue-i18n";
 import Me from "@/assets/images/Me.webp";
 
 const { t } = useI18n();
+
+const scrollAngle = ref(0);
+
+function handleScroll() {
+  scrollAngle.value = window.scrollY % 360;
+}
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 
 const fullText =
   '"Exploring the world of development and enjoying the journey of turning ideas into code."';
@@ -169,7 +224,7 @@ function initGridPoints(width, height) {
       gridPoints.push({
         x,
         y,
-        hoverStrength: 0, 
+        hoverStrength: 0,
       });
     }
   }
@@ -388,6 +443,6 @@ canvas {
   height: 100%;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 50%, transparent 10%, #0C0C0C 100%);
+  background: radial-gradient(circle at 50% 50%, transparent 10%, #0c0c0c 100%);
 }
 </style>
