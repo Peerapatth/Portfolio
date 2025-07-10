@@ -175,7 +175,7 @@ const showScroll = ref(false);
 onMounted(() => {
   setTimeout(() => {
     showScroll.value = true;
-  }, 6500);
+  }, 7000);
 });
 
 const scrollAngle = ref(0);
