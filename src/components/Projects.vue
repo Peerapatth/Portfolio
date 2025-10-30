@@ -56,7 +56,7 @@
                 data-aos-delay="100"
               >
                 <img
-                  src="@/assets/images/hod/Journal.png"
+                  src="@/assets/images/hod/JournalBanner.png"
                   alt="Journal Screenshot"
                   class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
