@@ -21,7 +21,7 @@
         "logo": "@/assets/elements/HouseOfDev.vue",
         "company": "House of Dev Technology",
         "position": "Software Developer",
-        "duration": "1 yr 2 mos · On-site",
+        "duration": " · On-site",
         "link": "https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Work?node-id=1045-144&node-type=canvas&t=1WS5wJgo7r849t1J-1&scaling=contain&content-scaling=fixed&page-id=953%3A227",
         "type": "Part-time · Sep 2024 - Now",
         "internship": "Internship · Jun - Aug 2024",
@@ -71,14 +71,14 @@
     "Journal": {
       "name": "Journal Magnetic Attraction",
       "time": "/ June 2025",
-      "description": "",
-      "link": ""
+      "description":   "Built the MarTech activation for JOURNAL Body Oil at Siam Paragon. Implemented NFC tap interactions, UI components, and analytics hooks. Worked with design and backend teams to ensure a simple, reliable experience across devices so attendees could easily access event activities.", 
+      "link": "https://www.linkedin.com/posts/houseofdevtech_journalbodyoilxppkrit-houseofdev-journal-activity-7376206676137484288-oJ5z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACW_MtABcc9vVnDVVIEbAtLAogECQKcXwF4"
     },
     "Nivea": {
       "name": "Nivea",
       "time": "/ June 2025",
-      "description": "",
-      "link": ""
+        "description": "Built a straightforward interactive display for NIVEA's Luminous630 Skin Glow Serum launch at Nai Lert Park. Implemented the UI and interaction logic to explain Thiamidol®, added simple animations and analytics, and worked with the team to make the experience reliable and easy to use.",
+      "link": "https://www.linkedin.com/posts/houseofdevtech_niveathailand-houseofdev-interactivedisplay-activity-7375859573812883456-SN2p?utm_source=share&utm_medium=member_desktop&rcm=ACoAACW_MtABcc9vVnDVVIEbAtLAogECQKcXwF4"
     },
     "meiji": {
       "name": "CP-Meiji x House of Dev Technology",

@@ -21,6 +21,105 @@
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
+                    src="@/assets/images/hod/JournalLogo.png"
+                    alt="Journal Logo"
+                    class="w-16 h-auto object-cover "
+                  />
+                  <div class="flex flex-col mt-2">
+                    <span class="text-xs text-[#9D9E9E]">
+                      {{ t("projects.Journal.time") }}
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-4 justify-center items-center">
+                  <a
+                    :href="t('projects.Journal.link')"
+                    target="_blank"
+                    class="flex flex-row gap-2 mt-2 justify-center items-center text-sm text-[#9D9E9E] hover:text-white transition"
+                  >
+                    <i class="bx bx-link text-2xl"></i>
+                    <div>Project Details</div>
+                  </a>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-base text-white">
+                  {{ t("projects.Journal.name") }}
+                  <span class="text-sm text-[#9D9E9E]">
+                    {{ t("projects.Journal.description") }}
+                  </span>
+                </h2>
+              </div>
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  src="@/assets/images/hod/Journal.png"
+                  alt="Journal Screenshot"
+                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-4 h-full">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="flex flex-row gap-4 items-center">
+                  <img
+                    src="@/assets/images/hod/NiveaLogo.png"
+                    alt="Nivea Logo"
+                    class="w-16 h-auto object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col mt-2">
+                    <span class="text-xs text-[#9D9E9E]">
+                      {{ t("projects.Nivea.time") }}
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-4 justify-center items-center">
+                  <a
+                    :href="t('projects.Nivea.link')"
+                    target="_blank"
+                    class="flex flex-row gap-2 mt-2 justify-center items-center text-sm text-[#9D9E9E] hover:text-white transition"
+                  >
+                    <i class="bx bx-link text-2xl"></i>
+                    <div>Project Details</div>
+                  </a>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-base text-white">
+                  {{ t("projects.Nivea.name") }}
+                  <span class="text-sm text-[#9D9E9E]">
+                    {{ t("projects.Nivea.description") }}
+                  </span>
+                </h2>
+              </div>
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  src="@/assets/images/hod/NIVEAThailand.png"
+                  alt="Nivea Screenshot"
+                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="flex flex-row gap-4 items-center">
+                  <img
                     src="@/assets/images/hod/MeijiLogo.png"
                     alt="Meiji Logo"
                     class="w-20 h-auto object-cover rounded-lg"
@@ -103,7 +202,7 @@
                 <img
                   src="@/assets/images/hod/HodLanding2.webp"
                   alt="HOD Landing Screenshot"
-                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -158,7 +257,7 @@
                 <img
                   src="@/assets/images/hod/BluuuMock.webp"
                   alt="Bluuu Screenshot"
-                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -305,7 +404,7 @@
                 <img
                   src="@/assets/images/hod/CL.webp"
                   alt="Crystallyte"
-                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -354,7 +453,7 @@
                 <img
                   src="@/assets/images/hod/GreeneryOfNorth.webp"
                   alt="Greenery of North Screenshot"
-                  class="w-full  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -403,7 +502,7 @@
                 <img
                   src="@/assets/images/inu/Banner.webp"
                   alt="Inu Screenshot"
-                  class="w-full md:w-[90%]  h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                  class="w-full md:w-[90%] h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>

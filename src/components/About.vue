@@ -2,19 +2,19 @@
   <section id="about" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2  md:gap-24 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 items-start">
           <div>
             <div class="mt-16" data-aos="fade-up">
-              <h1 
+              <h1
                 class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up" 
+                data-aos="fade-up"
                 data-aos-delay="50"
               >
                 {{ t("about.profileTitle") }}
               </h1>
-              <p 
+              <p
                 class="text-sm text-[#9D9E9E]"
-                data-aos="fade-up" 
+                data-aos="fade-up"
                 data-aos-delay="100"
               >
                 {{ t("about.profile-1") }} <br />
@@ -24,17 +24,17 @@
             </div>
 
             <div class="mt-16" data-aos="fade-up" data-aos-delay="120">
-              <h1 
+              <h1
                 class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up" 
+                data-aos="fade-up"
                 data-aos-delay="140"
               >
                 {{ t("about.educationTitle") }}
               </h1>
               <div class="flex flex-col gap-6">
-                <div 
+                <div
                   class="flex gap-4 items-center"
-                  data-aos="fade-up" 
+                  data-aos="fade-up"
                   data-aos-delay="160"
                 >
                   <div
@@ -61,9 +61,9 @@
                     </p>
                   </div>
                 </div>
-                <div 
+                <div
                   class="flex items-center gap-4"
-                  data-aos="fade-up" 
+                  data-aos="fade-up"
                   data-aos-delay="180"
                 >
                   <div
@@ -91,9 +91,9 @@
           </div>
           <div class="flex flex-col">
             <div class="mt-16" data-aos="fade-up" data-aos-delay="60">
-              <h1 
+              <h1
                 class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up" 
+                data-aos="fade-up"
                 data-aos-delay="80"
               >
                 {{ t("about.experienceTitle") }}
@@ -102,8 +102,8 @@
                 v-for="(exp, idx) in experience"
                 :key="idx"
                 class="mb-6 rounded-lg"
-                data-aos="fade-up" 
-                :data-aos-delay="100 + (idx * 30)"
+                data-aos="fade-up"
+                :data-aos-delay="100 + idx * 30"
               >
                 <div class="flex flex-col w-full">
                   <div class="flex flex-col lg:flex-row gap-4 items-end mt-4">
@@ -121,7 +121,7 @@
                         <div v-if="exp.internship">{{ exp.internship }}</div>
                       </div>
                       <p class="text-sm text-[#9D9E9E] lg:mt-4">
-                        {{ exp.duration }}
+                        {{ getDuration }} {{ exp.duration }}
                       </p>
                       <a
                         v-if="exp.link"
@@ -138,17 +138,17 @@
               </div>
             </div>
             <div class="mt-8" data-aos="fade-up" data-aos-delay="140">
-              <h1 
+              <h1
                 class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up" 
+                data-aos="fade-up"
                 data-aos-delay="160"
               >
                 {{ t("about.languagesTitle") }}
               </h1>
               <div class="flex flex-col gap-2">
-                <div 
+                <div
                   class="flex items-center gap-2"
-                  data-aos="fade-up" 
+                  data-aos="fade-up"
                   data-aos-delay="180"
                 >
                   <span class="text-white">{{ t("about.languages.en") }}</span>
@@ -156,9 +156,9 @@
                     / {{ t("about.languages.en-level") }}
                   </span>
                 </div>
-                <div 
+                <div
                   class="flex items-center gap-2"
-                  data-aos="fade-up" 
+                  data-aos="fade-up"
                   data-aos-delay="190"
                 >
                   <span class="text-white">{{ t("about.languages.th") }}</span>
@@ -185,4 +185,13 @@ const experience = computed(() => {
 
 import HouseOfDev from "@/assets/elements/HouseOfDev.vue";
 import KMUTT from "@/assets/images/KMUTT.png";
+
+const getDuration = computed(() => {
+  const now = new Date();
+  const start = new Date("2024-06-01");
+  const duration = now.getTime() - start.getTime();
+  const years = Math.floor(duration / (1000 * 60 * 60 * 24 * 365));
+  const months = Math.floor((duration / (1000 * 60 * 60 * 24 * 30)) % 12);
+  return `${years} yr ${months} mos`;
+});
 </script>
