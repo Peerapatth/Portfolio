@@ -118,11 +118,16 @@
                     <div class="flex flex-col w-full lg:text-end">
                       <div class="text-sm text-[#9D9E9E]">
                         <div>{{ exp.type }}</div>
-                        <div v-if="exp.internship">{{ exp.internship }}</div>
                       </div>
-                      <p class="text-sm text-[#9D9E9E] lg:mt-4">
+                      <p class="text-sm text-[#9D9E9E]">
                         {{ getDuration }} {{ exp.duration }}
                       </p>
+                      <div
+                        class="text-sm text-[#9D9E9E] lg:mt-4"
+                        v-if="exp.internship"
+                      >
+                        {{ exp.internship }}
+                      </div>
                       <a
                         v-if="exp.link"
                         :href="exp.link"
