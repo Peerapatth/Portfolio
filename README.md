@@ -5,7 +5,7 @@ I'm a computer engineering student at [KMUTT](https://www.kmutt.ac.th/) with a p
 
 ## 🚀 About Me
 
-- 🎓 Studying Computer Engineering at KMUTT.
+- 🎓 Computer Engineering at KMUTT.
 - 💻 Passionate about Frontend development and UX/UI design.
 - 🌱 Currently learning and exploring new technologies
 
