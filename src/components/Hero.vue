@@ -104,7 +104,6 @@
         </div>
       </div>
     </div>
-
     <div
       v-if="showScroll"
       class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle hidden lg:block ml-[10px]"
@@ -192,8 +191,7 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 
-const fullText =
-  '"Exploring the world of development and enjoying the journey of turning ideas into code."';
+const fullText = '"Just a dev, on a side quest. 🤿🏝️"';
 const displayedText = ref("");
 const showCursor = ref(true);
 const currentIndex = ref(0);
@@ -249,7 +247,7 @@ function drawGrid(ctx, width, height, animTime, hoverX, hoverY) {
     Math.min(width, height) * 0.4,
     width / 2,
     height / 2,
-    Math.max(width, height) * 0.5
+    Math.max(width, height) * 0.5,
   );
 
   ctx.fillStyle = vignette;

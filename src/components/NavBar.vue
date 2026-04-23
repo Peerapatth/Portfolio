@@ -57,7 +57,7 @@
         <Close v-else class="w-4 h-4 p-[2px]" />
       </button>
       <ul class="hidden md:flex items-center gap-4">
-        <li class="relative">
+        <!-- <li class="relative">
           <button
             class="py-1 rounded-lg transition hover:cursor-pointer"
             @click="toggleLangOptions"
@@ -87,7 +87,7 @@
               TH
             </button>
           </div>
-        </li>
+        </li> -->
         <li>
           <a
             class="font-semibold text-black px-8 py-3 bg-[#CDFF04] rounded-full hover:cursor-pointer"
@@ -145,7 +145,7 @@
           >Contact</a
         >
       </li>
-      <li class="relative">
+      <!-- <li class="relative">
         <button
           class="py-1 rounded-lg transition hover:cursor-pointer"
           @click="toggleLangOptions"
@@ -175,7 +175,7 @@
             TH
           </button>
         </div>
-      </li>
+      </li> -->
     </ul>
     <slot />
   </nav>

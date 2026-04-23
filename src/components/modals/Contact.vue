@@ -81,6 +81,15 @@
             >
               <i class="bx bxl-github"></i>
             </a>
+            <a
+              href="https://www.instagram.com/fxlmxiv/"
+              target="_blank"
+              rel="noopener"
+              class="text-gray-400 transition transform hover:scale-110 hover:text-pink-500"
+              aria-label="Instagram"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
           </div>
         </div>
       </div>

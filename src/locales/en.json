@@ -13,8 +13,8 @@
     "email": "peerapat.xiv@gmail.com",
     "phone": "+66 (0) 09 174 5520",
     "profileTitle": "ABOUT",
-    "profile-1": "I’m passionate about technology and design, focused on creating seamless user experiences with intuitive and visually appealing interfaces. I specialize in front-end development using Vue.js and Nuxt.js, collaborating closely with designers and developers to build responsive, user-friendly applications.",
-    "profile-2": "I enjoy exploring new technologies, understanding user behavior, and bridging the gap between design and development to craft meaningful digital experiences. Always eager to learn and grow, I aim to contribute to innovative projects that push the boundaries of technology and design.",
+    "profile-1": "I’m a software professional who enjoys working with technology and solving real-world problems. I have experience contributing to a variety of projects and collaborating with teams to build practical, user-focused solutions.",
+    "profile-2": "I’m always looking to learn and improve through hands-on experience, exploring new tools and ideas to grow as a developer and create meaningful digital products.",
     "experienceTitle": "EXPERIENCE",
     "experience": [
       {
@@ -26,7 +26,7 @@
         "type": "Sep 2024 - Now",
         "internship": "Internship · Jun - Aug 2024",
         "location": "Bangkok, Thailand ",
-        "description": "Focused on front-end development using Vue.js and Nuxt.js, working collaboratively with developers and UX/UI designers to create user-friendly, intuitive applications that enhance overall user experience. Researched client-side rendering (CSR) and successfully implemented SEO-friendly pre-rendered pages to improve site visibility and optimize performance. Additionally, developed responsive web designs to ensure seamless functionality and a consistent user experience across multiple devices and platforms."
+        "description": "Developed and improved features and solutions, working closely with teams to build reliable products and create intuitive user experiences."
       }
     ],
     "languagesTitle": "LANGUAGES",
@@ -71,13 +71,13 @@
     "Journal": {
       "name": "Journal Magnetic Attraction",
       "time": "/ June 2025",
-      "description":   "Built the MarTech activation for JOURNAL Body Oil at Siam Paragon. Implemented NFC tap interactions, UI components, and analytics hooks. Worked with design and backend teams to ensure a simple, reliable experience across devices so attendees could easily access event activities.", 
+      "description": "Built the MarTech activation for JOURNAL Body Oil at Siam Paragon. Implemented NFC tap interactions, UI components, and analytics hooks. Worked with design and backend teams to ensure a simple, reliable experience across devices so attendees could easily access event activities.",
       "link": "https://www.linkedin.com/posts/houseofdevtech_journalbodyoilxppkrit-houseofdev-journal-activity-7376206676137484288-oJ5z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACW_MtABcc9vVnDVVIEbAtLAogECQKcXwF4"
     },
     "Nivea": {
       "name": "Nivea",
       "time": "/ June 2025",
-        "description": "Built a straightforward interactive display for NIVEA's Luminous630 Skin Glow Serum launch at Nai Lert Park. Implemented the UI and interaction logic to explain Thiamidol®, added simple animations and analytics, and worked with the team to make the experience reliable and easy to use.",
+      "description": "Built a straightforward interactive display for NIVEA's Luminous630 Skin Glow Serum launch at Nai Lert Park. Implemented the UI and interaction logic to explain Thiamidol®, added simple animations and analytics, and worked with the team to make the experience reliable and easy to use.",
       "link": "https://www.linkedin.com/posts/houseofdevtech_niveathailand-houseofdev-interactivedisplay-activity-7375859573812883456-SN2p?utm_source=share&utm_medium=member_desktop&rcm=ACoAACW_MtABcc9vVnDVVIEbAtLAogECQKcXwF4"
     },
     "meiji": {
