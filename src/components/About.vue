@@ -192,11 +192,11 @@ import HouseOfDev from "@/assets/elements/HouseOfDev.vue";
 import KMUTT from "@/assets/images/KMUTT.png";
 
 const getDuration = computed(() => {
-  const now = new Date();
+  const now = new Date("2026-04-30");
   const start = new Date("2024-06-01");
   const duration = now.getTime() - start.getTime();
   const years = Math.floor(duration / (1000 * 60 * 60 * 24 * 365));
   const months = Math.floor((duration / (1000 * 60 * 60 * 24 * 30)) % 12);
-  return `${years} yr ${months} mos`;
+  return `${years} yr ${months} months`;
 });
 </script>
