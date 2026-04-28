@@ -21,9 +21,60 @@
               >
                 <div class="flex flex-row gap-4 items-center">
                   <img
+                    src="@/assets/images/hod/ThailandGalleryLogo.png"
+                    alt="Thailand Gallery Logo"
+                    class="w-16 h-auto object-cover"
+                  />
+                  <div class="flex flex-col mt-2">
+                    <span class="text-xs text-[#9D9E9E]">
+                      {{ t("projects.TheHague-Exhibition.time") }}
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-4 justify-center items-center">
+                  <a
+                    :href="t('projects.TheHague-Exhibition.link')"
+                    target="_blank"
+                    class="flex flex-row gap-2 mt-2 justify-center items-center text-sm text-[#9D9E9E] hover:text-white transition"
+                  >
+                    <i class="bx bx-link text-2xl"></i>
+                    <div>Project Details</div>
+                  </a>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-base text-white">
+                  {{ t("projects.TheHague-Exhibition.name") }}
+                  <span class="text-sm text-[#9D9E9E]">
+                    {{ t("projects.TheHague-Exhibition.description") }}
+                  </span>
+                </h2>
+              </div>
+
+              <div
+                class="w-full h-full flex items-center justify-center"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  src="@/assets/images/hod/ThailandGallery.png"
+                  alt="Thailand Gallery Screenshot"
+                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <div
+                class="flex flex-row gap-4 items-center justify-between"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="flex flex-row gap-4 items-center">
+                  <img
                     src="@/assets/images/hod/JournalLogo.png"
                     alt="Journal Logo"
-                    class="w-16 h-auto object-cover "
+                    class="w-16 h-auto object-cover"
                   />
                   <div class="flex flex-col mt-2">
                     <span class="text-xs text-[#9D9E9E]">

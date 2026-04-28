@@ -13,9 +13,8 @@
     "email": "peerapat.xiv@gmail.com",
     "phone": "+66 (0) 09 174 5520",
     "profileTitle": "ABOUT",
-
-    "profile-1": "ผมชอบเทคโนโลยีและการออกแบบมาก ๆ ครับ สนุกกับการทำให้การใช้งานออกมาลื่นไหลและดูดี ใช้งานง่าย ผมถนัดพัฒนา Front-end ด้วย Vue.js และ Nuxt.js ทำงานร่วมกับดีไซเนอร์และทีม dev เพื่อสร้างแอปที่ตอบโจทย์และใช้งานได้ดีจริง ๆ",
-    "profile-2": "ผมชอบลองอะไรใหม่ ๆ ชอบเรียนรู้เทคโนโลยีใหม่ ๆ เข้าใจผู้ใช้ และชอบเป็นคนที่เชื่อมช่องว่างระหว่างดีไซน์กับการพัฒนา อยากสร้างงานที่มีความหมาย แล้วก็พร้อมจะเรียนรู้สิ่งใหม่ ๆ ตลอดเวลา อยากทำโปรเจกต์ที่ท้าทายและผลักดันขอบเขตของเทคโนโลยีและการออกแบบไปไกลกว่าเดิม",
+    "profile-1": "I’m a software professional who enjoys working with technology and solving real-world problems. I have experience contributing to a variety of projects and collaborating with teams to build practical, user-focused solutions.",
+    "profile-2": "I’m always looking to learn and improve through hands-on experience, exploring new tools and ideas to grow as a developer and create meaningful digital products.",
     "experienceTitle": "EXPERIENCE",
     "experience": [
       {
@@ -24,31 +23,31 @@
         "position": "Software Developer",
         "duration": " · On-site",
         "link": "https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Work?node-id=1045-144&node-type=canvas&t=1WS5wJgo7r849t1J-1&scaling=contain&content-scaling=fixed&page-id=953%3A227",
-        "type": "Sep 2024 - Now",
+        "type": "Sep 2024 - April 2026",
         "internship": "Internship · Jun - Aug 2024",
         "location": "Bangkok, Thailand ",
-        "description": "โฟกัสที่การพัฒนา Front-end ด้วย Vue.js และ Nuxt.js ทำงานร่วมกับนักพัฒนาและดีไซเนอร์ UX/UI เพื่อสร้างแอปที่ใช้งานง่าย สะดวก และช่วยให้ผู้ใช้มีประสบการณ์ที่ดีขึ้น เคยศึกษาและทำ Client-side Rendering (CSR) พร้อมกับพัฒนาเพจแบบ Pre-render ที่รองรับ SEO เพื่อเพิ่มโอกาสในการค้นเจอบน Google และช่วยให้เว็บโหลดได้เร็วขึ้น นอกจากนี้ยังออกแบบเว็บให้รองรับทุกหน้าจอ เพื่อให้การใช้งานลื่นไหลและดูดีบนทุกอุปกรณ์"
+        "description": "Developed and improved features and solutions, working closely with teams to build reliable products and create intuitive user experiences."
       }
     ],
     "languagesTitle": "LANGUAGES",
     "languages": {
       "en": "English",
-      "en-level": "สามารถใช้งานได้ในระดับมืออาชีพ",
+      "en-level": "Professional working proficiency",
       "th": "Thai",
-      "th-level": "ภาษาแม่หรือใช้ได้ในระดับเจ้าของภาษา"
+      "th-level": "Native or bilingual proficiency"
     },
     "educationTitle": "EDUCATION",
     "education": {
       "kmutt": {
         "name": "King Mongkut's University of Technology Thonburi",
         "major": "Computer Engineering",
-        "degree": "ปริญญาตรี วิศวกรรมศาสตร์",
+        "degree": "Bachelor of Engineering - BE",
         "year": "2021 - Present"
       },
       "srw": {
         "name": "Sriboonruang Wittayakarn School",
         "major": "Science Mathematics Technology and Environment (SMTE)",
-        "degree": "ประกาศนียบัตรมัธยมศึกษาตอนปลาย",
+        "degree": "High School Diploma",
         "year": "2018 - 2021"
       }
     },
@@ -69,82 +68,88 @@
       "description": "",
       "link": ""
     },
+    "TheHague-Exhibition": {
+      "name": "Thailand Gallery Interactive Exhibition",
+      "time": "/ April 2026",
+      "description": "Delivered the Interactive Exhibition Experience for the Thailand Gallery at the Royal Thai Embassy in The Hague. Developed digital interactions across the Queen Room, Rose Room, and Gallery Room to bring exhibition stories to life. Focused on seamless UI, intuitive navigation, and reliable content access to enhance visitor engagement while supporting the integration of Thai cultural heritage, design, and innovation.",
+      "link": ""
+    },
     "Journal": {
       "name": "Journal Magnetic Attraction",
       "time": "/ June 2025",
-      "description": "พัฒนาการใช้งาน MarTech สำหรับงานเปิดตัว JOURNAL Body Oil ที่สยามพารากอน โดยออกแบบ UI และระบบ NFC (tap) เพื่อให้ผู้เข้าร่วมเข้าถึงกิจกรรมได้ง่าย รวมถึงเพิ่มการเก็บข้อมูลวิเคราะห์ และทำงานร่วมกับทีมดีไซน์และแบ็กเอนด์เพื่อให้ประสบการณ์ใช้งานเรียบง่ายและเชื่อถือได้",
+      "description": "Built the MarTech activation for JOURNAL Body Oil at Siam Paragon. Implemented NFC tap interactions, UI components, and analytics hooks. Worked with design and backend teams to ensure a simple, reliable experience across devices so attendees could easily access event activities.",
       "link": "https://www.linkedin.com/posts/houseofdevtech_journalbodyoilxppkrit-houseofdev-journal-activity-7376206676137484288-oJ5z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACW_MtABcc9vVnDVVIEbAtLAogECQKcXwF4"
     },
     "Nivea": {
       "name": "Nivea",
       "time": "/ June 2025",
-      "description": "พัฒนาหน้าจออินเทอร์แอกทีฟสำหรับงานเปิดตัว LUMINOUS630 SKIN GLOW SERUM ที่ Nai Lert Park ออกแบบ UI และตรรกะการโต้ตอบเพื่ออธิบาย Thiamidol® เพิ่มแอนิเมชันเล็กน้อยและการเก็บข้อมูลวิเคราะห์ ทำงานร่วมกับทีมเพื่อให้ประสบการณ์ใช้งานเรียบง่ายและเสถียร",
+      "description": "Built a straightforward interactive display for NIVEA's Luminous630 Skin Glow Serum launch at Nai Lert Park. Implemented the UI and interaction logic to explain Thiamidol®, added simple animations and analytics, and worked with the team to make the experience reliable and easy to use.",
       "link": "https://www.linkedin.com/posts/houseofdevtech_niveathailand-houseofdev-interactivedisplay-activity-7375859573812883456-SN2p?utm_source=share&utm_medium=member_desktop&rcm=ACoAACW_MtABcc9vVnDVVIEbAtLAogECQKcXwF4"
     },
     "meiji": {
       "name": "CP-Meiji x House of Dev Technology",
       "time": "/ May 2025",
-      "description": "พัฒนาฟีเจอร์อินเทอร์แอกทีฟสำหรับงาน World Milk Day ของ CP-Meiji เพื่อให้ผู้เข้าร่วมงานสามารถมีส่วนร่วมกับผลิตภัณฑ์นมผ่านประสบการณ์ดิจิทัลสุดล้ำ รู้สึกภูมิใจที่ได้เป็นส่วนหนึ่งในฐานะนักพัฒนาเพื่อสร้างความประทับใจและมอบความรู้ในงานนี้",
+      "description": ", developed interactive features for CP-Meiji's World Milk Day event, enabling visitors to engage with milk products through innovative digital experiences. Proud to contribute as a developer to making the event memorable and educational.",
       "link": "https://www.facebook.com/share/v/1ECxGYDcTp/?mibextid=wwXIfr"
     },
     "HOD-Landing": {
       "name": "House of Dev Technology",
       "time": "/ Dec 2024",
-      "description": "เป็นหน้า Landing Page ที่ออกแบบมาเพื่อแสดงบริการและความเชี่ยวชาญของ House of Dev Technology ด้วยดีไซน์ที่ทันสมัยและเป็นมืออาชีพ ใช้งานง่ายและช่วยให้ลูกค้าเข้าถึงข้อมูลได้สะดวก",
+      "description": " is a landing page designed to showcase the services and expertise of House of Dev Technology. It features a modern and professional design, highlighting the company's offerings and providing easy navigation for potential clients.",
       "link": "https://houseofdev.tech/"
     },
     "verscan": {
       "name": "Verscan",
       "time": "/ Dec 2024 - Mar 2025",
-      "description": "พัฒนาระบบอัปโหลดไฟล์ในระบบ Verscan เพิ่มส่วน Blog และ Partner บนหน้า Landing Page พร้อมทั้งปรับปรุงความเร็วในการใช้งานเพื่อประสบการณ์ที่ดีขึ้นสำหรับผู้ใช้",
+      "description": "Integrated file upload into the Verscan system, added blog and partner sections to the landing page, along with speed improvements for a better user experience.",
       "link": "https://www.verscan.com/"
     },
     "bluuu": {
       "name": "Bluuu",
       "time": "/ Apr - Sep 2025",
-      "description": "พัฒนาแพลตฟอร์มจองบริการแม่บ้านที่มีอินเทอร์เฟซที่ใช้งานง่าย ระบบจัดการการจอง และการชำระเงินแบบบูรณาการเพื่อการจองบริการทำความสะอาดอย่างมืออาชีพอย่างราบรื่น",
+      "description": ", developed a maid booking platform featuring user-friendly interface, reservation management, and payment integration for seamless professional cleaning service bookings.",
       "link": "https://bluuu.co/"
     },
     "pocumi": {
       "name": "Pocumi",
       "time": "/Nov - Dec 2024",
-      "description": "เป็นหน้า Landing Page สำหรับผลิตภัณฑ์ Pocumi ที่ออกแบบมาเพื่อแนะนำโซลูชัน ช่วยเพิ่มประสิทธิภาพและติดตามการจัดซื้อได้อย่างครบถ้วนและใช้งานง่าย",
+      "description": "is a landing page for the Pocumi product, designed to introduce the solution and highlight how it improves efficiency and tracks procurement movements with a comprehensive and user-friendly approach.",
       "link": "https://www.pocumi.com/"
     },
     "crystallyte": {
       "name": "Crystallyte",
       "time": "/ Dec 2024",
-      "description": "เป็นหน้า Landing Page สำหรับ Crystallyte ที่นำเสนอขั้นตอนการผลิตวัสดุนาโนคาร์บอนผลึกคุณภาพสูงจาก CO₂ และขยะพลาสติกอย่างน่าสนใจ",
+      "description": "is a landing page for Crystallyte, showcasing their innovative process for producing high-yield crystalline carbon nanomaterials from sources like CO₂ and plastic waste.",
       "link": "https://crystallyte.com/"
     },
     "greeneryofnorth": {
       "name": "Greenery of North",
       "time": "/ Aug 2024",
-      "description": "เป็นหน้า Landing Page ที่ชวนให้นักท่องเที่ยวมาสัมผัสฤดูฝนของภาคเหนือ นำเสนอธรรมชาติอันเขียวขจี วัฒนธรรมท้องถิ่น อาหารพื้นเมือง และกิจกรรมสร้างสรรค์มากมาย",
+      "description": "is a landing page inviting travelers to experience Northern Thailand’s rainy season, highlighting lush landscapes, local culture, unique cuisine, and creative arts and activities.",
       "link": "https://greeneryofnorth.in.th/"
     },
     "inu": {
       "name": "INU 2",
       "time": "/ Jun - Jul 2025",
-      "description": "เป็นระบบ QMS บนเว็บสำหรับการศึกษาในสายวิศวกรรม มีหน้าตาใหม่และเครื่องมือเพิ่มเติมที่รองรับมาตรฐาน TABEE และ ABET ช่วยจัดการข้อมูลรายวิชาและติดตามผลลัพธ์ได้อย่างเป็นระบบ",
+      "description": "is a web-based QMS for engineering education, featuring a new UI and expanded tools for TABEE and ABET accreditation, course data management, outcome tracking, and reporting.",
       "link": "https://github.com/JOKPOON/inu-garden"
     },
     "tradekub": {
       "name": "Tradekub",
       "time": "/ Mar - Feb 2023",
-      "description": "เป็นเว็บไซต์สำหรับซื้อขายหลักทรัพย์ออนไลน์ ออกแบบมาเพื่อให้ผู้ใช้ออกคำสั่งซื้อขายหุ้นได้สะดวกยิ่งขึ้น เป็นตัวกลางในการทำธุรกรรมระหว่างโบรกเกอร์กับผู้ใช้งาน พร้อมทั้งพัฒนาระบบติดตามราคาหุ้นแบบเรียลไทม์และกราฟแสดงผลราคาที่อัปเดตทันที",
+      "description": " is a website used to trade securities online, designed to make it more convenient for investors to issue stock orders. It acts as an intermediary between brokers and users in conducting transactions. Additionally, we implemented real-time stock price tracking and dynamic chart rendering, allowing users to monitor price movements and trends directly within the platform.",
       "link": "https://github.com/Bukharney/ProjectTradeKub"
     },
     "modx": {
       "name": "ModX",
       "time": "/ Sep - Dec 2023",
-      "description": "เป็นแพลตฟอร์มช้อปปิ้งออนไลน์สำหรับร้านหนังสือ KMUTT ที่ออกแบบมาให้ใช้งานง่ายสำหรับนักศึกษาและบุคลากร สามารถเลือกซื้อหนังสือและสื่อการเรียนต่าง ๆ ได้สะดวก",
+      "description": "is an online shopping platform designed specifically for the KMUTT bookstore. It provides a user-friendly interface for students and faculty to browse and purchase books and other educational materials.",
       "link": "https://github.com/JOKPOON/ModX"
     },
     "savorly": {
       "name": "Savorly",
       "time": "/ Apr - Jul 2024",
-      "description": "เป็นผู้ช่วยจัดการมื้ออาหารที่ครบวงจร ออกแบบมาเพื่อช่วยให้การใช้ชีวิตประจำวันสะดวกขึ้นและเปลี่ยนวิธีจัดการมื้ออาหารให้เป็นเรื่องง่าย",
+      "description": ", your comprehensive meal companion designed to seamlessly address the challenges of your busy lifestyle.  to make your days more comfortable by revolutionizing the way you approach meals.",
       "link": "https://www.behance.net/gallery/178419879/Savorly"
     }
   },
@@ -154,13 +159,13 @@
       "time": "May - Aug 2022 · 4 months",
       "title": "Google UX Design Specialization",
       "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/WCSPYVHZZQSY",
-      "desc": "จบหลักสูตรเข้มข้นที่เน้นการเรียนรู้เชิงปฏิบัติด้านการออกแบบประสบการณ์ผู้ใช้ (UX) โดยได้เรียนรู้การทำวิจัยผู้ใช้ การออกแบบ Wireframe และ Prototype รวมถึงการใช้หลักการออกแบบที่เหมาะสมกับการโต้ตอบของผู้ใช้ มีโอกาสทำโปรเจกต์จริงและทำงานร่วมกับผู้อื่นเพื่อพัฒนา Digital Product ที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง"
+      "desc": "Completed an intensive, hands-on specialization focused on the core principles of user experience design. Developed expertise in conducting user research, creating wireframes and prototypes, and applying interaction design best practices. Gained practical experience in designing intuitive, user-centered digital products through real-world projects and collaborative assignments."
     },
     "c2": {
       "time": "Sep - Dec 2023",
       "title": "Advanced React",
       "link": "https://www.coursera.org/account/accomplishments/verify/23N62QT9AYRP",
-      "desc": "เรียนต่อยอดจากหลักสูตร Meta Front-End Developer Professional Certificate โดยเรียนจบไปแล้ว 6 จาก 9 คอร์ส พัฒนาทักษะขั้นสูงในการสร้างแอป React ที่ขยายและดูแลได้ง่าย เช่น การจัดการ State โครงสร้าง Component และการปรับประสิทธิภาพการทำงาน พร้อมเสริมความชำนาญในกระบวนการพัฒนา Front-End สมัยใหม่และ Best Practices ที่ควรใช้"
+      "desc": "Progressed through the Meta Front-End Developer Professional Certificate, completing 6 out of 9 courses. Acquired advanced skills in building scalable and maintainable React applications, including state management, component architecture, and performance optimization. Enhanced proficiency in modern front-end development workflows and best practices."
     }
   }
 }
