@@ -27,6 +27,7 @@
           >Skills</a
         >
       </li>
+        
       <li>
         <a
           class="hover:text-white transition"
@@ -36,6 +37,15 @@
           >Projects</a
         >
       </li>
+      <li>
+        <a
+          class="hover:text-white transition"
+          href="https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Work?node-id=1045-147&t=K6UzsQai4racBCIC-0&scaling=min-zoom&content-scaling=fixed&page-id=560%3A2"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CV</a
+        >
+      </li> 
       <!-- <li>
         <a
           class="hover:text-white transition"
@@ -119,7 +129,8 @@
           @click="setActive('skills')"
           >Skills</a
         >
-      </li>
+      </li>             
+                   
       <li>
         <a
           class="hover:text-white transition"
@@ -127,6 +138,15 @@
           href="#projects"
           @click="setActive('projects')"
           >Projects</a
+        >
+      </li>
+       <li>
+        <a
+          class="hover:text-white transition"
+          href="https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Work?node-id=1045-147&t=K6UzsQai4racBCIC-0&scaling=min-zoom&content-scaling=fixed&page-id=560%3A2"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CV</a
         >
       </li>
       <!-- <li>
