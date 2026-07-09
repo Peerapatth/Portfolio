@@ -52,17 +52,6 @@
                 </h2>
               </div>
 
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/Foremost.png"
-                  alt="Foremost Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -103,17 +92,6 @@
                 </h2>
               </div>
 
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/ThailandGallery.png"
-                  alt="Thailand Gallery Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -151,17 +129,6 @@
                     {{ t("projects.Journal.description") }}
                   </span>
                 </h2>
-              </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/JournalBanner.png"
-                  alt="Journal Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
 
@@ -202,17 +169,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/NIVEAThailand.png"
-                  alt="Nivea Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -251,17 +207,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/Meiji.webp"
-                  alt="Meiji Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -295,17 +240,6 @@
                     {{ t("projects.HOD-Landing.description") }}
                   </span>
                 </h2>
-              </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/HodLanding2.webp"
-                  alt="HOD Landing Screenshot"
-                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
 
@@ -351,17 +285,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/BluuuMock.webp"
-                  alt="Bluuu Screenshot"
-                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -399,17 +322,6 @@
                     {{ t("projects.pocumi.description") }}
                   </span>
                 </h2>
-              </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/PocumiLanding.webp"
-                  alt="Pocumi Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-xl mt-4 hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
@@ -449,17 +361,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/Verscan.webp"
-                  alt="Verscan Screenshot"
-                  class="w-full md:w-4/5 h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -497,17 +398,6 @@
                     {{ t("projects.crystallyte.description") }}
                   </span>
                 </h2>
-              </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/CL.webp"
-                  alt="Crystallyte"
-                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
@@ -547,17 +437,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/hod/GreeneryOfNorth.webp"
-                  alt="Greenery of North Screenshot"
-                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -595,17 +474,6 @@
                     {{ t("projects.inu.description") }}
                   </span>
                 </h2>
-              </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/inu/Banner.webp"
-                  alt="Inu Screenshot"
-                  class="w-full md:w-[90%] h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
@@ -645,17 +513,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/tradekub/Banner.webp"
-                  alt="Tradekub Screenshot"
-                  class="w-full h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full">
               <div
@@ -694,17 +551,6 @@
                   </span>
                 </h2>
               </div>
-              <div
-                class="w-full h-full flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/modx/Mock.webp"
-                  alt="ModX Screenshot"
-                  class="w-full md:w-[90%] h-auto object-cover rounded-lg mt-4 hover:scale-105 transition-transform duration-300"
-                />
-              </div>
             </div>
             <div class="flex flex-col gap-4 h-full w-full">
               <div
@@ -742,17 +588,6 @@
                     {{ t("projects.savorly.description") }}
                   </span>
                 </h2>
-              </div>
-              <div
-                class="flex flex-row gap-4 justify-center items-center w-full"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img
-                  src="@/assets/images/savorly/Savorly.webp"
-                  alt="Savorly Screenshot"
-                  class="w-4/5 md:w-3/4 h-auto object-cover rounded-lg -mr-12 md:-mr-16 mt-6 hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
           </div>

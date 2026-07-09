@@ -2,175 +2,131 @@
   <section id="about" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 items-start">
-          <div>
-            <div class="mt-16" data-aos="fade-up">
-              <h1
-                class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+          <div class="space-y-8 mt-8">
+            <div
+              class="rounded-2xl border border-[#1F1F1F] bg-[#111111] p-6 md:p-7"
+              data-aos="fade-up"
+            >
+              <h1 class="text-xl font-bold tracking-wide text-white mb-5">
                 {{ t("about.profileTitle") }}
               </h1>
-              <p
-                class="text-sm text-[#9D9E9E]"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                {{ t("about.profile-1") }} <br />
-                <br />
-                {{ t("about.profile-2") }}
+              <div class="flex items-center gap-2 text-xs font-mono text-[#CDFF04] mb-4">
+                <span>$</span>
+                <span>whoami</span>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-bold tracking-wide text-white">
+                {{ t("about.firstname") }} {{ t("about.lastname") }}
+              </h2>
+              <p class="text-sm md:text-base text-[#CDFF04] font-medium mt-2">
+                {{ t("about.role") }} {{ t("about.roleSub") }}
               </p>
+              <p class="text-sm text-[#B7B7B7] leading-relaxed mt-5">
+                {{ t("about.about") }}
+              </p>
+              <div class="mt-6 pt-5 border-t border-[#222222] space-y-2 text-sm">
+                <p class="text-[#D5D5D5]">
+                  <span class="font-mono text-[#9D9E9E]">email:</span>
+                  {{ t("about.email") }}
+                </p>
+                <p class="text-[#D5D5D5]">
+                  <span class="font-mono text-[#9D9E9E]">phone:</span>
+                  {{ t("about.phone") }}
+                </p>
+                <p class="text-[#D5D5D5] leading-relaxed">
+                  <span class="font-mono text-[#9D9E9E]">address:</span>
+                  {{ t("about.address.line1") }}
+                  {{ t("about.address.line2") }}
+                  {{ t("about.address.line3") }}
+                </p>
+              </div>
             </div>
 
-            <div class="mt-16" data-aos="fade-up" data-aos-delay="120">
-              <h1
-                class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up"
-                data-aos-delay="140"
-              >
+            <div
+              class="rounded-2xl border border-[#1F1F1F] bg-[#111111] p-6 md:p-7"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
+              <h1 class="text-xl font-bold tracking-wide mb-5 text-white">
                 {{ t("about.educationTitle") }}
               </h1>
-              <div class="flex flex-col gap-6">
-                <div
-                  class="flex gap-4 items-center"
-                  data-aos="fade-up"
-                  data-aos-delay="160"
-                >
-                  <div
-                    class="w-16 h-auto aspect-square flex items-center justify-center"
-                  >
-                    <img
-                      :src="KMUTT"
-                      alt="KMUTT"
-                      class="w-16 h-auto aspect-square object-contain"
-                    />
-                  </div>
-                  <div>
-                    <h2 class="font-semibold text-base text-white">
-                      {{ t("about.education.kmutt.name") }}
-                    </h2>
-                    <p class="text-sm text-[#9D9E9E]">
-                      {{ t("about.education.kmutt.major") }}
-                    </p>
-                    <p class="text-sm text-[#9D9E9E]">
-                      {{ t("about.education.kmutt.degree") }}
-                    </p>
-                    <p class="text-sm text-[#9D9E9E]">
-                      {{ t("about.education.kmutt.year") }}
-                    </p>
-                  </div>
+              <div class="space-y-4">
+                <div class="rounded-xl border border-[#232323] bg-[#0D0D0D] p-4">
+                  <p class="text-white font-semibold">{{ t("about.education.kmutt.name") }}</p>
+                  <p class="text-sm text-[#B0B0B0]">{{ t("about.education.kmutt.major") }}</p>
+                  <p class="text-sm text-[#9D9E9E]">{{ t("about.education.kmutt.degree") }}</p>
+                  <p class="text-xs text-[#8A8A8A] mt-1">{{ t("about.education.kmutt.year") }}</p>
                 </div>
-                <div
-                  class="flex items-center gap-4"
-                  data-aos="fade-up"
-                  data-aos-delay="180"
-                >
-                  <div
-                    class="w-16 h-auto aspect-square flex items-center justify-center"
-                  >
-                    <div class="bg-white h-2 w-2 rounded-full"></div>
-                  </div>
-                  <div>
-                    <h2 class="font-semibold text-base text-white">
-                      {{ t("about.education.srw.name") }}
-                    </h2>
-                    <p class="text-sm text-[#9D9E9E]">
-                      {{ t("about.education.srw.major") }}
-                    </p>
-                    <p class="text-sm text-[#9D9E9E]">
-                      {{ t("about.education.srw.degree") }}
-                    </p>
-                    <p class="text-sm text-[#9D9E9E]">
-                      {{ t("about.education.srw.year") }}
-                    </p>
-                  </div>
+                <div class="rounded-xl border border-[#232323] bg-[#0D0D0D] p-4">
+                  <p class="text-white font-semibold">{{ t("about.education.srw.name") }}</p>
+                  <p class="text-sm text-[#B0B0B0]">{{ t("about.education.srw.major") }}</p>
+                  <p class="text-sm text-[#9D9E9E]">{{ t("about.education.srw.degree") }}</p>
+                  <p class="text-xs text-[#8A8A8A] mt-1">{{ t("about.education.srw.year") }}</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col">
-            <div class="mt-16" data-aos="fade-up" data-aos-delay="60">
-              <h1
-                class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up"
-                data-aos-delay="80"
-              >
+
+          <div class="space-y-8 mt-8">
+            <div
+              class="rounded-2xl border border-[#1F1F1F] bg-[#111111] p-6 md:p-7"
+              data-aos="fade-up"
+              data-aos-delay="40"
+            >
+              <h1 class="text-xl font-bold tracking-wide mb-5 text-white">
                 {{ t("about.experienceTitle") }}
               </h1>
-              <div
-                v-for="(exp, idx) in experience"
-                :key="idx"
-                class="mb-6 rounded-lg"
-                data-aos="fade-up"
-                :data-aos-delay="100 + idx * 30"
-              >
-                <div class="flex flex-col w-full">
-                  <div class="flex flex-col lg:flex-row gap-4 items-end mt-4">
-                    <div class="flex flex-col w-full">
-                      <HouseOfDev class="w-48 h-auto" />
-                      <h2 class="font-semibold text-lg text-white mt-4">
-                        {{ exp.position }}
-                      </h2>
-                      <p class="text-base text-white">{{ exp.company }}</p>
-                      <p class="text-sm text-[#9D9E9E]">{{ exp.location }}</p>
-                    </div>
-                    <div class="flex flex-col w-full lg:text-end">
-                      <div class="text-sm text-[#9D9E9E]">
-                        <div>{{ exp.type }}</div>
-                      </div>
-                      <p class="text-sm text-[#9D9E9E]">
-                        {{ getDuration }} {{ exp.duration }}
-                      </p>
-                      <div
-                        class="text-sm text-[#9D9E9E] lg:mt-4"
-                        v-if="exp.internship"
-                      >
-                        {{ exp.internship }}
-                      </div>
-                      <a
-                        v-if="exp.link"
-                        :href="exp.link"
-                        target="_blank"
-                        class="text-sm text-[#9D9E9E] hover:text-white transition underline hover:cursor-pointer"
-                      >
-                        Certificate
-                      </a>
-                    </div>
+              <div class="space-y-4">
+                <article
+                  v-for="(exp, idx) in experience"
+                  :key="idx"
+                  class="rounded-xl border border-[#232323] bg-[#0D0D0D] p-4"
+                  data-aos="fade-up"
+                  :data-aos-delay="70 + idx * 30"
+                >
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <p class="font-semibold text-white">{{ exp.company }}</p>
+                    <span class="text-xs font-mono text-[#CDFF04]">{{ exp.type }}</span>
                   </div>
-                </div>
-                <p class="mt-3 text-sm text-[#9D9E9E]">{{ exp.description }}</p>
+                  <p class="text-sm text-[#DDDDDD] mt-1">{{ exp.position }}</p>
+                  <p class="text-xs text-[#A0A0A0] mt-1">
+                    {{ exp.employmentType }} · {{ exp.location }}
+                  </p>
+                  <p v-if="exp.internship" class="text-xs text-[#9D9E9E] mt-2">
+                    {{ exp.internship }}
+                  </p>
+                  <p class="text-sm text-[#B4B4B4] mt-3 leading-relaxed">
+                    {{ exp.description }}
+                  </p>
+                  <a
+                    v-if="exp.link"
+                    :href="exp.link"
+                    target="_blank"
+                    class="inline-flex mt-3 text-xs text-[#9D9E9E] hover:text-white transition underline"
+                  >
+                    View Reference
+                  </a>
+                </article>
               </div>
             </div>
-            <div class="mt-8" data-aos="fade-up" data-aos-delay="140">
-              <h1
-                class="text-xl font-bold tracking-wide mb-4 text-white"
-                data-aos="fade-up"
-                data-aos-delay="160"
-              >
+
+            <div
+              class="rounded-2xl border border-[#1F1F1F] bg-[#111111] p-6 md:p-7"
+              data-aos="fade-up"
+              data-aos-delay="120"
+            >
+              <h1 class="text-xl font-bold tracking-wide mb-4 text-white">
                 {{ t("about.languagesTitle") }}
               </h1>
-              <div class="flex flex-col gap-2">
-                <div
-                  class="flex items-center gap-2"
-                  data-aos="fade-up"
-                  data-aos-delay="180"
-                >
+              <div class="space-y-2 text-sm">
+                <p class="text-[#D8D8D8]">
                   <span class="text-white">{{ t("about.languages.en") }}</span>
-                  <span class="text-sm text-[#9D9E9E]">
-                    / {{ t("about.languages.en-level") }}
-                  </span>
-                </div>
-                <div
-                  class="flex items-center gap-2"
-                  data-aos="fade-up"
-                  data-aos-delay="190"
-                >
+                  <span class="text-[#9D9E9E]"> / {{ t("about.languages.en-level") }}</span>
+                </p>
+                <p class="text-[#D8D8D8]">
                   <span class="text-white">{{ t("about.languages.th") }}</span>
-                  <span class="text-sm text-[#9D9E9E]">
-                    / {{ t("about.languages.th-level") }}
-                  </span>
-                </div>
+                  <span class="text-[#9D9E9E]"> / {{ t("about.languages.th-level") }}</span>
+                </p>
               </div>
             </div>
           </div>
@@ -183,20 +139,9 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
-const { t, locale, messages } = useI18n();
+const { t, tm } = useI18n();
+
 const experience = computed(() => {
-  return messages.value[locale.value]?.about?.experience || [];
-});
-
-import HouseOfDev from "@/assets/elements/HouseOfDev.vue";
-import KMUTT from "@/assets/images/KMUTT.png";
-
-const getDuration = computed(() => {
-  const now = new Date("2026-04-30");
-  const start = new Date("2024-06-01");
-  const duration = now.getTime() - start.getTime();
-  const years = Math.floor(duration / (1000 * 60 * 60 * 24 * 365));
-  const months = Math.floor((duration / (1000 * 60 * 60 * 24 * 30)) % 12);
-  return `${years} yr ${months} months`;
+  return tm("about.experience") || [];
 });
 </script>

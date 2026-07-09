@@ -13,20 +13,27 @@
     "email": "peerapat.xiv@gmail.com",
     "phone": "+66 (0) 09 174 5520",
     "profileTitle": "ABOUT",
-    "profile-1": "I’m a software professional who enjoys working with technology and solving real-world problems. I have experience contributing to a variety of projects and collaborating with teams to build practical, user-focused solutions.",
-    "profile-2": "I’m always looking to learn and improve through hands-on experience, exploring new tools and ideas to grow as a developer and create meaningful digital products.",
+    "about": "Software Developer with experience developing web applications, enterprise integration solutions, and interactive digital experiences. Passionate about writing clean, maintainable code and continuously learning new technologies.",
     "experienceTitle": "EXPERIENCE",
     "experience": [
       {
-        "logo": "@/assets/elements/HouseOfDev.vue",
+        "company": "SCB TechX",
+        "position": "Associate Software Engineer · Integration",
+        "employmentType": "Full-time",
+        "type": "Jun 2026 - Present",
+        "location": "Bangkok, Thailand",
+        "link": "",
+        "description": "Develop and maintain enterprise integration solutions using CA7 Gateway and Kong API Gateway. Design, implement, and support secure, scalable API services while collaborating with cross-functional teams to ensure reliable system integration and high availability."
+      },
+      {
         "company": "House of Dev Technology",
         "position": "Software Developer",
-        "duration": " · On-site",
+        "employmentType": "Full-time",
+        "type": "Sep 2024 - Apr 2026",
+        "internship": "Software Developer Intern · Jun 2024 - Aug 2024",
+        "location": "Bangkok, Thailand",
         "link": "https://www.figma.com/proto/zL8oeKqRLu2jqVApfUGLQP/Work?node-id=1045-144&node-type=canvas&t=1WS5wJgo7r849t1J-1&scaling=contain&content-scaling=fixed&page-id=953%3A227",
-        "type": "Sep 2024 - April 2026",
-        "internship": "Internship · Jun - Aug 2024",
-        "location": "Bangkok, Thailand ",
-        "description": "Developed and improved features and solutions, working closely with teams to build reliable products and create intuitive user experiences."
+        "description": "Developed and maintained web applications, interactive experiences, and digital solutions for clients across various industries. Worked closely with designers, backend engineers, and project stakeholders to build responsive, user-friendly, and reliable products while contributing to feature development, performance optimization, and production deployments."
       }
     ],
     "languagesTitle": "LANGUAGES",
@@ -53,21 +60,51 @@
     },
     "skillsTitle": "SKILLS",
     "skills": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Tools",
-      "languages": "Programming Languages"
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "Vue.js",
+          "Nuxt.js",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "Node.js",
+          "REST API",
+          "API Integration",
+          "Authentication",
+          "MySQL",
+          "PostgreSQL"
+        ]
+      },
+      "languages": {
+        "title": "Programming Languages",
+        "items": ["TypeScript", "JavaScript", "Go", "Python", "SQL", "C"]
+      },
+      "concepts": {
+        "title": "Concepts",
+        "items": [
+          "Responsive Design",
+          "UI/UX",
+          "System Integration",
+          "Microservices",
+          "RESTful APIs",
+          "Version Control (Git)"
+        ]
+      }
     }
   },
   "projects": {
     "title": "WORK & PROJECTS",
     "description": "Here are some of my projects that showcase my skills and experience in software development. Each project highlights different aspects of my work, from front-end development to full-stack applications.",
-    "Toyota": {
-      "name": "Toyota - TMA2025",
-      "time": "/ June - July 2025",
-      "description": "",
-      "link": ""
-    },
     "foremost": {
       "name": "Foremost- Mini Game",
       "time": "/Apr 2026",

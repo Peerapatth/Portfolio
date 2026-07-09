@@ -2,97 +2,40 @@
   <section id="skills" class="pt-16 bg-[#0C0C0C]">
     <div class="w-full p-8 text-white">
       <div class="container mx-auto">
-        <div class="mt-8">
-          <h1 
-            class="text-xl font-bold tracking-wide mb-4 text-white"
-            data-aos="fade-up"
-          >
+        <div class="mt-8 space-y-6">
+          <h1 class="text-xl font-bold tracking-wide text-white" data-aos="fade-up">
             {{ t("about.skillsTitle") }}
           </h1>
-          <div class="flex flex-col md:flex-row justify-between gap-8 mt-8">
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="50">
-              <h2 class="text-base mb-2 text-white">
-                {{ t("about.skills.frontend") }}
-              </h2>
-              <div class="flex flex-wrap gap-4">
-                <div
-                  v-for="(icon, index) in frontend"
-                  :key="icon.alt"
-                  class="flex flex-col items-center"
-                  data-aos="zoom-in"
-                  :data-aos-delay="50 + (index * 100)"
-                >
-                  <img
-                    :src="icon.src"
-                    :alt="icon.alt"
-                    class="w-10 h-10 object-contain mb-1"
-                  />
-                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
-                </div>
-              </div>
+          <div
+            class="rounded-2xl border border-[#1F1F1F] bg-[#111111] p-6 md:p-7"
+            data-aos="fade-up"
+            data-aos-delay="60"
+          >
+            <div class="flex items-center gap-2 text-xs font-mono text-[#CDFF04] mb-5">
+              <span>$</span>
+              <span>cat ./skills.json</span>
             </div>
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="100">
-              <h2 class="text-base mb-2 text-white">
-                {{ t("about.skills.backend") }}
-              </h2>
-              <div class="flex flex-wrap gap-4">
-                <div
-                  v-for="(icon, index) in backend"
-                  :key="icon.alt"
-                  class="flex flex-col items-center"
-                  data-aos="zoom-in"
-                  :data-aos-delay="100 + (index * 100)"
-                >
-                  <img
-                    :src="icon.src"
-                    :alt="icon.alt"
-                    class="w-10 h-10 object-contain mb-1"
-                  />
-                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <article
+                v-for="(group, idx) in skillGroups"
+                :key="group.key"
+                class="rounded-xl border border-[#242424] bg-[#0D0D0D] p-4"
+                data-aos="fade-up"
+                :data-aos-delay="100 + idx * 30"
+              >
+                <h2 class="text-base text-white font-semibold mb-3">
+                  {{ group.title }}
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    v-for="item in group.items"
+                    :key="item"
+                    class="text-xs md:text-sm px-2.5 py-1 rounded-md border border-[#2D2D2D] bg-[#141414] text-[#CECECE] font-mono"
+                  >
+                    {{ item }}
+                  </span>
                 </div>
-              </div>
-            </div>
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="150">
-              <h2 class="text-base mb-2 text-white">
-                {{ t("about.skills.languages") }}
-              </h2>
-              <div class="flex flex-wrap gap-4">
-                <div
-                  v-for="(icon, index) in languages"
-                  :key="icon.alt"
-                  class="flex flex-col items-center"
-                  data-aos="zoom-in"
-                  :data-aos-delay="150 + (index * 100)"
-                >
-                  <img
-                    :src="icon.src"
-                    :alt="icon.alt"
-                    class="w-10 h-10 object-contain mb-1"
-                  />
-                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="text-base mb-2 text-white">
-                {{ t("about.skills.tools") }}
-              </h2>
-              <div class="flex flex-wrap gap-4">
-                <div
-                  v-for="(icon, index) in tools"
-                  :key="icon.alt"
-                  class="flex flex-col items-center"
-                  data-aos="zoom-in"
-                  :data-aos-delay="200 + (index * 100)"
-                >
-                  <img
-                    :src="icon.src"
-                    :alt="icon.alt"
-                    class="w-10 h-10 object-contain mb-1"
-                  />
-                  <span class="text-xs text-[#CFCFCF]">{{ icon.alt }}</span>
-                </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -102,67 +45,18 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
-// Frontend icons
-import VueIcon from "@/assets/elements/Skills/programming/Vue.png";
-import ReactIcon from "@/assets/elements/Skills/programming/React.png";
-import NuxtJs from "@/assets/elements/Skills/programming/NuxtJs.png";
-import NextJs from "@/assets/elements/Skills/programming/NextJs.png";
+const { t, tm } = useI18n();
 
-// Backend icons
-import Firebase from "@/assets/elements/Skills/programming/Firebase.png";
-import NodeJs from "@/assets/elements/Skills/programming/NodeJs.png";
-import MongoDB from "@/assets/elements/Skills/database/Mongo.png";
-import MySQL from "@/assets/elements/Skills/programming/MySQL.png";
-
-// Tools
-import Figma from "@/assets/elements/Skills/tools/Figma.png";
-import VSCode from "@/assets/elements/Skills/tools/VS.png";
-import Git from "@/assets/elements/Skills/tools/Git.png";
-import Bitbucket from "@/assets/elements/Skills/tools/Bitbucket.png";
-
-// Programming languages
-import JS from "@/assets/elements/Skills/programming/JS.png";
-import TS from "@/assets/elements/Skills/programming/TS.png";
-import HTML from "@/assets/elements/Skills/programming/HTML.png";
-import CSS from "@/assets/elements/Skills/programming/CSS.png";
-import Go from "@/assets/elements/Skills/programming/Go.png";
-import C from "@/assets/elements/Skills/programming/C.png";
-import Python from "@/assets/elements/Skills/programming/Python.png";
-import Tailwind from "@/assets/elements/Skills/programming/Tailwind.png";
-
-const frontend = [
-  { src: VueIcon, alt: "Vue" },
-  { src: ReactIcon, alt: "React" },
-  { src: NuxtJs, alt: "Nuxt.js" },
-  { src: NextJs, alt: "Next.js" },
-];
-
-const backend = [
-  { src: Firebase, alt: "Firebase" },
-  { src: NodeJs, alt: "Node.js" },
-  // { src: MongoDB, alt: "MongoDB" },
-  // { src: MySQL, alt: "MySQL" },
-];
-
-const tools = [
-  { src: Figma, alt: "Figma" },
-  { src: VSCode, alt: "VS Code" },
-  { src: Git, alt: "Git" },
-  { src: Bitbucket, alt: "Bitbucket" },
-];
-
-const languages = [
-  { src: JS, alt: "JavaScript" },
-  { src: TS, alt: "TypeScript" },
-  { src: HTML, alt: "HTML" },
-  { src: CSS, alt: "CSS" },
-  // { src: Go, alt: "Go" },
-  { src: C, alt: "C" },
-  { src: Python, alt: "Python" },
-  { src: Tailwind, alt: "Tailwind" },
-];
+const skillGroups = computed(() => {
+  const groups = tm("about.skills") || {};
+  return ["frontend", "backend", "languages", "concepts"].map(key => ({
+    key,
+    title: groups[key]?.title || key,
+    items: groups[key]?.items || [],
+  }));
+});
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped></style>
